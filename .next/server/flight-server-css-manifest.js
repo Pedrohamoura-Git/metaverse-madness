@@ -1,1 +1,0 @@
-self.__RSC_CSS_MANIFEST={"__entry_css__":{"/home/pedro/Documents/projects/personal/metaverse-madness/app/page":["/home/pedro/Documents/projects/personal/metaverse-madness/styles/globals.css"]},"/home/pedro/Documents/projects/personal/metaverse-madness/app/layout.js":["/home/pedro/Documents/projects/personal/metaverse-madness/styles/globals.css"]}

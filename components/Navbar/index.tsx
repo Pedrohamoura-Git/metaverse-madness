@@ -1,9 +1,7 @@
-'use client';
+"use client";
 
-const Navbar = () => (
-  <nav>
-    navbar
-  </nav>
-);
+import { motion } from "framer-motion";
+
+const Navbar = () => <nav>navbar</nav>;
 
 export default Navbar;

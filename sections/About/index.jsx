@@ -10,6 +10,7 @@ const About = () => (
       text-[#C7C7C7]
     `}
   >
+    <div className='gradient-02 z-0' />
 
     <a href='#explore'>
       <img

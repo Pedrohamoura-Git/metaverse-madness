@@ -1,6 +1,12 @@
 'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
+
+import { TypingText } from '../../components/CustomTexts';
+
 import styles from '../../styles';
+import { fadeIn, staggerContainer } from '../../utils/motion';
+
 const About = () => (
   <section
     className={`${styles.paddings} lg:text-[32px] md:text-[24]
@@ -20,6 +26,10 @@ const About = () => (
       className={`${styles.innerWidth} ${styles.flexCenter} flex-col
         mx-auto`}
     >
+      <TypingText
+        title='| About Metaversus'
+        textStyles='text-center'
+      />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className='z-10'

@@ -2,6 +2,10 @@
 import React from 'react';
 const About = () => (
   <section
+    className='font-sans text-center lg:text-[32px] md:text-[24]
+  sm:text-[16] text-[14] lg:leading-[57.6px] md:leading-[40px]
+  sm:leading-[30px] leading-[24.4px] uppercase text-[#C7C7C7]
+  2xl:max-w-[1100px] w-full mx-auto flex flex-col align-center relative'
   >
     <p className='z-10'>
       <span className='font-bold text-white mr-3'>Metaverse</span>

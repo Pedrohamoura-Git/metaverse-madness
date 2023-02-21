@@ -12,13 +12,15 @@ const About = () => (
   >
     <div className='gradient-02 z-0' />
 
-    <a href='#explore'>
-      <img
-        src='/arrow-down.svg'
-        alt='arrow-down'
-        className='w-[32px] h-[32px] mx-auto mt-8'
-      />
-    </a>
+    <motion.div
+      variants={staggerContainer}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ one: false, amount: 0.25 }}
+      className={`${styles.innerWidth} ${styles.flexCenter} flex-col
+        mx-auto`}
+    >
+    </motion.div>
   </section>
 );
 

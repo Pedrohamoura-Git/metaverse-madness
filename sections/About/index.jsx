@@ -20,6 +20,23 @@ const About = () => (
       className={`${styles.innerWidth} ${styles.flexCenter} flex-col
         mx-auto`}
     >
+      <motion.p
+        variants={fadeIn('up', 'tween', 0.2, 1)}
+        className='z-10'
+      >
+        <span className='font-bold text-white'>Metaverse</span> is a
+        new thing in the future, where you can enjoy the virtual
+        world, live new experiences, create new memories and discover
+        new worlds, because this is the new reality in the{' '}
+        <span className='font-bold text-white'>
+          madness of the metaverse.
+        </span>{' '}
+        Using only <span className='fo nt-bold text-white'>VR</span>
+        devices you can easily explore the metaverse the way you want
+        and turn your dreams into reality. Let's{' '}
+        <span className='font-bold text-white'>explore</span> the
+        madness of the metaverse by scrolling down
+      </motion.p>
     </motion.div>
   </section>
 );

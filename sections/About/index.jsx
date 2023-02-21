@@ -21,6 +21,14 @@ const About = () => (
       <span className='font-bold text-white mx-3'>explore</span> the
       madness of the metaverse by scrolling down
     </p>
+
+    <a href='#explore'>
+      <img
+        src='/arrow-down.svg'
+        alt='arrow-down'
+        className='w-[32px] h-[32px] mx-auto mt-8'
+      />
+    </a>
   </section>
 );
 

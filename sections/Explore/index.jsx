@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { exploreWorlds } from '../../constants';
 import { ExploreCard, TitleText, TypingText } from '../../components';
 const Explore = () => (
   <section
@@ -27,6 +28,12 @@ const Explore = () => (
           textStyles='lg:text-[64px] md:text-[32px] sm:text-[28px] text-white'
         />
       </h2>
+
+      <motion.div className='flex align-center gap-x-8'>
+        {exploreWorlds.map((world, index) => (
+          <ExploreCard world={world} key={index} />
+        ))}
+      </motion.div>
     </motion.div>
   </section>
 );

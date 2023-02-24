@@ -7,6 +7,12 @@ import { slideIn } from '../../utils/motion';
 import { exploreWorlds } from '../../constants';
 
 import { ExploreCard, TitleText, TypingText } from '../../components';
+
+import { useState } from 'react';
+
+const Explore = () => {
+  const [selectedWorld, updateSelectedWorld] = useState('world-2');
+
   return (
     <motion.section
       variants={slideIn('left', 'tween', 0.2, 1)}
@@ -32,6 +38,18 @@ import { ExploreCard, TitleText, TypingText } from '../../components';
         />
       </h2>
 
+      <div className='flex align-center justify-center gap-x-8 mt-12'>
+        {exploreWorlds.map((world, index) => (
+          <ExploreCard
+            world={world}
+            key={index}
+            selectedWorld={selectedWorld}
+            updateSelectedWorld={updateSelectedWorld}
+          />
+        ))}
+      </div>
     </motion.section>
+  );
+};
 
 export default Explore;

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import styles from '../../styles';
 import { slideIn } from '../../utils/motion';
 import { exploreWorlds } from '../../constants';
+
 import { ExploreCard, TitleText, TypingText } from '../../components';
   return (
     <motion.section
@@ -16,6 +17,10 @@ import { ExploreCard, TitleText, TypingText } from '../../components';
         flex-col align-center 2xl:max-w-[1100px] text-white
         `}
     >
+      <TypingText
+        title='| The World'
+        textStyles='uppercase mx-auto'
+      />
 
       <h2
         className={`lg:text-[64px] md:text-[32px] sm:text-[28px] text-center leading-[80.64px]`}

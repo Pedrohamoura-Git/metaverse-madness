@@ -2,6 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { TypingText } from '../../components';
+
 const ExploreCard = ({
   world,
   selectedWorld,
@@ -17,6 +19,20 @@ const ExploreCard = ({
         world.id === selectedWorld ? 'w-[370px]' : 'w-[170px]'
       } h-[563px] rounded-[24px] object-cover duration-500`}
     />
+
+    {world.id === selectedWorld && (
+      <>
+        <img
+          src='/headset.svg'
+          alt='headset'
+          className='w-[60px] h-[60px] absolute left-[10%] bottom-[30%] -translate-x-1/4 -translate-y-2/4 rounded-full border-[18px] border-current'
+        />
+        <TypingText
+          title='Enter metaverse'
+          textStyles='uppercase text-white text-base font-bold mx-auto absolute bottom-[25%] left-[25%] -translate-x-2/4 -translate-y-2/4'
+        />
+      </>
+    )}
 
     <p
       className={`${

@@ -2,22 +2,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import styles from '../../styles';
 import { exploreWorlds } from '../../constants';
 import { ExploreCard, TitleText, TypingText } from '../../components';
-const Explore = () => (
-  <section
-    className={`${styles.paddings} mx-auto flex flex-col align-center 2xl:max-w-[1100px] text-white`}
-  >
-    <motion.div
-      variants={slideIn('down', 'tween', 0.2, 1)}
-      initial='hidden'
-      whileInView='show'
-      className={`${styles.innerWidth} flex flex-col`}
+  return (
+    <section
+      className={`${styles.paddings} mx-auto flex flex-col align-center 2xl:max-w-[1100px] text-white`}
     >
-      <TypingText
-        title='| The World'
-        textStyles='uppercase mx-auto'
-      />
 
       <h2
         className={`lg:text-[64px] md:text-[32px] sm:text-[28px] text-center leading-[80.64px]`}
@@ -29,13 +20,6 @@ const Explore = () => (
         />
       </h2>
 
-      <motion.div className='flex align-center gap-x-8'>
-        {exploreWorlds.map((world, index) => (
-          <ExploreCard world={world} key={index} />
-        ))}
-      </motion.div>
-    </motion.div>
-  </section>
-);
+    </section>
 
 export default Explore;

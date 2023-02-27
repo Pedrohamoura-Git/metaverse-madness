@@ -14,19 +14,19 @@ const Explore = () => {
   const [selectedWorld, updateSelectedWorld] = useState('world-2');
 
   return (
-    <motion.section
-      variants={slideIn('left', 'tween', 0.2, 1)}
-      initial='hidden'
-      whileInView='show'
+    <section
       className={`
         ${styles.paddings} ${styles.innerWidth} mx-auto flex
         flex-col align-center 2xl:max-w-[1100px] text-white
         `}
     >
-      <TypingText
-        title='| The World'
-        textStyles='uppercase mx-auto'
-      />
+      <motion.div
+        variants={staggerContainer}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex flex-col`}
+      >
 
       <h2
         className={`lg:text-[64px] md:text-[32px] sm:text-[28px] text-center leading-[80.64px]`}
@@ -38,17 +38,8 @@ const Explore = () => {
         />
       </h2>
 
-      <div className='flex align-center justify-center gap-x-8 mt-12'>
-        {exploreWorlds.map((world, index) => (
-          <ExploreCard
-            {...world}
-            index={index}
-            selectedWorld={selectedWorld}
-            updateSelectedWorld={updateSelectedWorld}
-          />
-        ))}
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 };
 

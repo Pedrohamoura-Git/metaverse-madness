@@ -28,8 +28,8 @@ const Explore = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText
-          title='explore'
-          textStyles='lg:text-[64px] md:text-[32px] sm:text-[28px] text-white'
+          title='| The World'
+          textStyles='uppercase mx-auto'
         />
 
         <TitleText

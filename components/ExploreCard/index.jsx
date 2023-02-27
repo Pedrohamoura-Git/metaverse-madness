@@ -4,16 +4,20 @@ import { motion } from 'framer-motion';
 
 import { TypingText } from '../../components';
 
+import { fadeIn } from '../../utils/motion';
+
 const ExploreCard = ({
   id,
   imgUrl,
   title,
+  index,
   selectedWorld,
   updateSelectedWorld,
 }) => (
   <motion.button
     className='relative'
-    onClick={() => updateSelectedWorld(world.id)}
+    variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+    onClick={() => updateSelectedWorld(id)}
   >
     <img
       src={imgUrl}

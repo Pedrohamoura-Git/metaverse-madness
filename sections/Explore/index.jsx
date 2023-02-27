@@ -42,6 +42,7 @@ const Explore = () => {
         {exploreWorlds.map((world, index) => (
           <ExploreCard
             {...world}
+            index={index}
             selectedWorld={selectedWorld}
             updateSelectedWorld={updateSelectedWorld}
           />

@@ -27,16 +27,20 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-
-      <h2
-        className={`lg:text-[64px] md:text-[32px] sm:text-[28px] text-center leading-[80.64px]`}
-      >
-        Choose the world you want to{' '}
         <TypingText
           title='explore'
           textStyles='lg:text-[64px] md:text-[32px] sm:text-[28px] text-white'
         />
-      </h2>
+
+        <TitleText
+          title={
+            <>
+              Choose the world you want{' '}
+              <br className='md:block hidden' /> to explore
+            </>
+          }
+          textStyles='text-center'
+        />
 
       </motion.div>
     </section>

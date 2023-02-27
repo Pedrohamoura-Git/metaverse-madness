@@ -42,6 +42,17 @@ const Explore = () => {
           textStyles='text-center'
         />
 
+        <div className='flex align-center justify-center gap-x-8 mt-12'>
+          {exploreWorlds.map((world, index) => (
+            <ExploreCard
+              {...world}
+              index={index}
+              key={world.id}
+              selectedWorld={selectedWorld}
+              updateSelectedWorld={updateSelectedWorld}
+            />
+          ))}
+        </div>
       </motion.div>
     </section>
   );

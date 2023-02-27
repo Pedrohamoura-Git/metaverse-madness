@@ -41,8 +41,7 @@ const Explore = () => {
       <div className='flex align-center justify-center gap-x-8 mt-12'>
         {exploreWorlds.map((world, index) => (
           <ExploreCard
-            world={world}
-            key={index}
+            {...world}
             selectedWorld={selectedWorld}
             updateSelectedWorld={updateSelectedWorld}
           />

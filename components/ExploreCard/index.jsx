@@ -5,7 +5,9 @@ import { motion } from 'framer-motion';
 import { TypingText } from '../../components';
 
 const ExploreCard = ({
-  world,
+  id,
+  imgUrl,
+  title,
   selectedWorld,
   updateSelectedWorld,
 }) => (
@@ -14,13 +16,13 @@ const ExploreCard = ({
     onClick={() => updateSelectedWorld(world.id)}
   >
     <img
-      src={world.imgUrl}
+      src={imgUrl}
       className={`${
-        world.id === selectedWorld ? 'w-[370px]' : 'w-[170px]'
+        id === selectedWorld ? 'w-[370px]' : 'w-[170px]'
       } h-[563px] rounded-[24px] object-cover duration-500`}
     />
 
-    {world.id === selectedWorld && (
+    {id === selectedWorld && (
       <>
         <img
           src='/headset.svg'
@@ -36,12 +38,12 @@ const ExploreCard = ({
 
     <p
       className={`${
-        world.id === selectedWorld
+        id === selectedWorld
           ? 'bottom-[0%] left-[25%] -translate-x-1/4 -translate-y-2/4'
           : '-rotate-90 max-w-max bottom-[30%] left-[50%] -translate-x-2/4 -translate-y-2/4'
       } text-4xl font-bold absolute duration-500`}
     >
-      {world.title}
+      {title}
     </p>
   </motion.button>
 );

@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import styles from '../../styles';
-import { slideIn } from '../../utils/motion';
+import { staggerContainer } from '../../utils/motion';
 import { exploreWorlds } from '../../constants';
 
 import { ExploreCard, TitleText, TypingText } from '../../components';
@@ -17,8 +17,9 @@ const Explore = () => {
     <section
       className={`
         ${styles.paddings} ${styles.innerWidth} mx-auto flex
-        flex-col align-center 2xl:max-w-[1100px] text-white
+        flex-col align-center 2xl:max-w-[1280px] text-white
         `}
+      id='explore'
     >
       <motion.div
         variants={staggerContainer}

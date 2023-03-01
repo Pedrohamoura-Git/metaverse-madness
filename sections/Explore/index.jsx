@@ -43,7 +43,7 @@ const Explore = () => {
           textStyles='text-center'
         />
 
-        <div className='flex align-center justify-center gap-x-8 mt-12'>
+        <div className='mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5'>
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               {...world}

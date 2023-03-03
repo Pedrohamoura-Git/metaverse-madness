@@ -16,8 +16,7 @@ const Explore = () => {
   return (
     <section
       className={`
-        ${styles.paddings} ${styles.innerWidth} mx-auto flex
-        flex-col align-center 2xl:max-w-[1280px] text-white
+        ${styles.paddings} ${styles.innerWidth} mx-auto text-white 2xl:max-w-[1280px]
         `}
       id='explore'
     >
@@ -37,13 +36,13 @@ const Explore = () => {
           title={
             <>
               Choose the world you want{' '}
-              <br className='md:block hidden' /> to explore
+              <br className='hidden md:block' /> to explore
             </>
           }
           textStyles='text-center'
         />
 
-        <div className='mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5'>
+        <div className='mt-[50px] flex min-h-full flex-col gap-5 sm:min-h-[30vh] lg:flex-row'>
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               {...world}

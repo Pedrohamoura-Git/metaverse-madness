@@ -1,5 +1,10 @@
 'use client';
 import React, { useState } from 'react';
+
+import styles from '../../styles';
+
+import { TitleText, TypingText } from '../../components/CustomTexts';
+
 const GetStarted = () => {
   const [instructionsList] = useState([
     {
@@ -20,6 +25,25 @@ const GetStarted = () => {
 
   return (
     <section className={`${styles.innerWidth} mx-auto text-white`}>
+      <div
+        className={`${styles.paddings} flex flex-col items-center justify-between lg:flex-row`}
+      >
+        {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
+        <img
+          src='/get-started.png'
+          className='h-full max-h-[527.33px] w-full max-w-[461.32px]'
+          alt=''
+        />
+        <div className='max-w-md sm:w-full'>
+          <TypingText title='| How Metaversus Works' />
+
+          <TitleText
+            title='Get started with just a few clicks'
+            textStyles='mb-8'
+          />
+
+        </div>
+      </div>
     </section>
   );
 };

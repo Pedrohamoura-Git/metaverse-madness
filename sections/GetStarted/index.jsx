@@ -42,6 +42,36 @@ const GetStarted = () => {
             textStyles='mb-8'
           />
 
+          <motion.ol
+            variants={staggerContainer}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
+          >
+            {(instructionsList ?? []).map(
+              ({ description, id }, index) => (
+                <motion.li
+                  variants={fadeIn(
+                    'left',
+                    'spring',
+                    index * 0.5,
+                    0.75,
+                  )}
+                  className='mb-[16px] flex items-center gap-4'
+                  key={id}
+                >
+                  <span
+                    className={`${styles.flexCenter} glassmorphism bold  mb- min-h-[60px] min-w-[60px] rounded-[24px] text-xl`}
+                  >
+                    {index <= 8 ? `0${index + 1}` : index + 1}
+                  </span>
+                  <span className='text-[#B0B0B0]'>
+                    {description}
+                  </span>
+                </motion.li>
+              ),
+            )}
+          </motion.ol>
         </div>
       </div>
     </section>

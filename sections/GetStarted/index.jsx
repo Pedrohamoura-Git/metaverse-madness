@@ -36,8 +36,17 @@ const GetStarted = () => {
           className='h-full max-h-[527.33px] w-full max-w-[461.32px]'
           alt=''
         />
-        <div className='max-w-md sm:w-full'>
-          <TypingText title='| How Metaversus Works' />
+        <motion.div
+          variants={staggerContainer}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.25 }}
+          className='max-w-md sm:w-full'
+        >
+          <TypingText
+            title='| How Metaversus Works'
+            textStyles='uppercase'
+          />
 
           <TitleText
             title='Get started with just a few clicks'
@@ -74,7 +83,7 @@ const GetStarted = () => {
               ),
             )}
           </motion.ol>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -42,7 +42,7 @@ const Explore = () => {
           textStyles='text-center'
         />
 
-        <div className='mt-[50px] flex min-h-full flex-col gap-5 sm:min-h-[30vh] lg:flex-row'>
+        <div className='mt-24 flex min-h-[70vh] flex-col gap-5 sm:min-h-[30vh] md:mt-[50px] md:min-h-full  lg:flex-row'>
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               {...world}

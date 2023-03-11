@@ -14,7 +14,7 @@ const ExploreCard = ({
   selectedWorld,
   updateSelectedWorld,
 }) => {
-  const isThisCardSelected = () => !!(id === selectedWorld);
+  const wasThisCardSelected = () => !!(id === selectedWorld);
 
   return (
   <motion.button
@@ -25,11 +25,12 @@ const ExploreCard = ({
     <img
       src={imgUrl}
       className={`${
-          isThisCardSelected() ? 'h-[370px]' : 'h-[70px] md:h-[563px]'
+          wasThisCardSelected()
+            ? 'h-[370px]'
+            : 'h-[70px] md:h-[563px]'
         }  w-full rounded-2xl object-cover duration-500`}
     />
-    <div className='absolute bottom-0 h-9 w-full rounded-2xl bg-[rgba(0,0,0,0.5)] md:bottom-0 md:flex md:flex-col md:justify-start'>
-        {isThisCardSelected() && (
+        {wasThisCardSelected() && (
       <>
         <img
           src='/headset.svg'
@@ -45,7 +46,7 @@ const ExploreCard = ({
 
     <p
       className={`${
-            isThisCardSelected()
+            wasThisCardSelected()
           ? 'bottom-[0%] left-[25%] -translate-x-1/4 -translate-y-2/4'
               : 'bottom-[-10px] left-[50%] max-w-max -translate-x-2/4 -translate-y-2/4 md:bottom-[30%] md:-rotate-90'
           } absolute text-lg font-bold duration-500 md:text-4xl`}

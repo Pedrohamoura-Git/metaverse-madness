@@ -34,7 +34,7 @@ const ExploreCard = ({
         <img
           src='/headset.svg'
           alt='headset'
-          className='w-[60px] h-[60px] absolute left-[10%] bottom-[30%] -translate-x-1/4 -translate-y-2/4 rounded-full border-[18px] border-current'
+              className='absolute left-[10%] bottom-[30%] h-[60px] w-[60px] -translate-x-1/4 -translate-y-2/4 rounded-full border-[18px] border-current'
         />
         <TypingText
           title='Enter metaverse'
@@ -47,8 +47,8 @@ const ExploreCard = ({
       className={`${
             isThisCardSelected()
           ? 'bottom-[0%] left-[25%] -translate-x-1/4 -translate-y-2/4'
-          : '-rotate-90 max-w-max bottom-[30%] left-[50%] -translate-x-2/4 -translate-y-2/4'
-      } text-4xl font-bold absolute duration-500`}
+              : 'bottom-[-10px] left-[50%] max-w-max -translate-x-2/4 -translate-y-2/4 md:bottom-[30%] md:-rotate-90'
+          } absolute text-lg font-bold duration-500 md:text-4xl`}
     >
       {title}
     </p>

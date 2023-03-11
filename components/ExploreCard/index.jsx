@@ -47,10 +47,9 @@ const ExploreCard = ({
                 className='h-[30px] w-[30px]'
               />
             </div>
-            <TypingText
-              title='Enter metaverse'
-              textStyles='uppercase text-white text-base font-bold text-left'
-            />
+            <button className='text-left text-base font-bold uppercase text-white'>
+              Enter metaverse
+            </button>
           </>
         )}
 

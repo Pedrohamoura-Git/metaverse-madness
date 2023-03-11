@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import { TypingText } from '../../components';
 
+import styles from '../../styles';
 import { fadeIn } from '../../utils/motion';
 
 const ExploreCard = ({
@@ -17,45 +18,54 @@ const ExploreCard = ({
   const wasThisCardSelected = () => !!(id === selectedWorld);
 
   return (
-  <motion.button
-    className='relative'
-    variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-    onClick={() => updateSelectedWorld(id)}
-  >
-    <img
-      src={imgUrl}
-      className={`${
+    <motion.button
+      className='relative'
+      variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+      onClick={() => updateSelectedWorld(id)}
+    >
+      <img
+        src={imgUrl}
+        className={`${
           wasThisCardSelected()
             ? 'h-[370px]'
             : 'h-[70px] md:h-[563px]'
         }  w-full rounded-2xl object-cover duration-500`}
-    />
+      />
+      <div
+        className={`${
+          wasThisCardSelected() ? 'h-56' : 'h-9'
+        } absolute bottom-0 w-full rounded-2xl bg-[rgba(0,0,0,0.5)] p-7 duration-700 md:bottom-0 md:flex md:flex-col md:justify-start`}
+      >
         {wasThisCardSelected() && (
-      <>
-        <img
-          src='/headset.svg'
-          alt='headset'
-              className='absolute left-[10%] bottom-[30%] h-[60px] w-[60px] -translate-x-1/4 -translate-y-2/4 rounded-full border-[18px] border-current'
-        />
-        <TypingText
-          title='Enter metaverse'
-          textStyles='uppercase text-white text-base font-bold mx-auto absolute bottom-[25%] left-[25%] -translate-x-2/4 -translate-y-2/4'
-        />
-      </>
-    )}
+          <>
+            <div
+              className={`${styles.flexCenter} bg-[rgba(255, 255, 255, 0.25) glassmorphism mb-4 h-[60px] w-[60px] rounded-3xl`}
+            >
+              <img
+                src='/headset.svg'
+                alt='headset'
+                className='h-[30px] w-[30px]'
+              />
+            </div>
+            <TypingText
+              title='Enter metaverse'
+              textStyles='uppercase text-white text-base font-bold text-left'
+            />
+          </>
+        )}
 
-    <p
-      className={`${
+        <p
+          className={`${
             wasThisCardSelected()
-          ? 'bottom-[0%] left-[25%] -translate-x-1/4 -translate-y-2/4'
+              ? 'mt-6 text-2xl'
               : 'bottom-[-10px] left-[50%] max-w-max -translate-x-2/4 -translate-y-2/4 md:bottom-[30%] md:-rotate-90'
           } absolute text-lg font-bold duration-500 md:text-4xl`}
-    >
-      {title}
-    </p>
-    </div>
-  </motion.button>
-);
+        >
+          {title}
+        </p>
+      </div>
+    </motion.button>
+  );
 };
 
 export default ExploreCard;

@@ -18,7 +18,7 @@ const ExploreCard = ({
   const wasThisCardSelected = () => !!(id === selectedWorld);
 
   return (
-    <motion.button
+    <motion.div
       className='relative'
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       onClick={() => updateSelectedWorld(id)}
@@ -64,7 +64,7 @@ const ExploreCard = ({
           {title}
         </p>
       </div>
-    </motion.button>
+    </motion.div>
   );
 };
 

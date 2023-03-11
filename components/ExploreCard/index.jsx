@@ -26,6 +26,7 @@ const ExploreCard = ({
       } h-[563px] rounded-[24px] object-cover duration-500`}
     />
 
+    <div className='absolute bottom-0 h-9 w-full rounded-2xl bg-[rgba(0,0,0,0.5)] md:bottom-0 md:flex md:flex-col md:justify-start'>
     {id === selectedWorld && (
       <>
         <img
@@ -49,6 +50,7 @@ const ExploreCard = ({
     >
       {title}
     </p>
+    </div>
   </motion.button>
 );
 

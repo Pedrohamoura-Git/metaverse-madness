@@ -27,8 +27,8 @@ const ExploreCard = ({
         src={imgUrl}
         className={`${
           wasThisCardSelected()
-            ? 'h-[370px]'
-            : 'h-[70px] md:h-[563px]'
+            ? 'h-[370px] lg:w-[500px]'
+            : 'h-[70px] md:h-20 lg:w-full'
         }  w-full rounded-2xl object-cover duration-500`}
       />
       <div

@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import styles from '../../styles';
-import { staggerContainer, fadeIn } from '../../utils/motion';
+import {
+  staggerContainer,
+  fadeIn,
+  planetVariants,
+} from '../../utils/motion';
 
 import { TitleText, TypingText } from '../../components/CustomTexts';
 
@@ -27,22 +31,23 @@ const GetStarted = () => {
 
   return (
     <section className={`${styles.innerWidth} mx-auto text-white`}>
-      <div
-        className={`${styles.paddings} flex flex-col items-center justify-between lg:flex-row`}
+      <motion.div
+        variants={staggerContainer}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.paddings} flex flex-col items-center justify-around lg:flex-row`}
       >
         {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
-        <img
-          src='/get-started.png'
-          className='h-full max-h-[527.33px] w-full max-w-[461.32px]'
-          alt=''
-        />
-        <motion.div
-          variants={staggerContainer}
-          initial='hidden'
-          whileInView='show'
-          viewport={{ once: false, amount: 0.25 }}
-          className='max-w-md sm:w-full'
-        >
+        <motion.div variants={planetVariants('left')}>
+          <img
+            src='/get-started.png'
+            className='h-full w-full lg:max-h-[580px] lg:max-w-[530px]'
+            alt=''
+          />
+        </motion.div>
+
+        <div className='max-w-md sm:w-full'>
           <TypingText
             title='| How Metaversus Works'
             textStyles='uppercase'
@@ -83,8 +88,8 @@ const GetStarted = () => {
               ),
             )}
           </motion.ol>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
 };

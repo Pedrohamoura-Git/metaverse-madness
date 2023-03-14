@@ -14,16 +14,16 @@ import { TitleText, TypingText } from '../../components/CustomTexts';
 const GetStarted = () => {
   const [instructionsList] = useState([
     {
-      id: 'id-1',
+      id: 'instruction-1',
       description:
         'Find a world that suits you and you want to enter',
     },
     {
-      id: 'id-2',
+      id: 'instruction-2',
       description: 'Enter the world by reading basmalah to be safe',
     },
     {
-      id: 'id-3',
+      id: 'instruction-3',
       description:
         'No need to beat around the bush, just stay on the gas and have fun',
     },
@@ -77,7 +77,7 @@ const GetStarted = () => {
                   key={id}
                 >
                   <span
-                    className={`${styles.flexCenter} glassmorphism bold  mb- min-h-[60px] min-w-[60px] rounded-[24px] text-xl`}
+                    className={`${styles.flexCenter} glassmorphism bold min-h-[60px] min-w-[60px] rounded-3xl text-xl`}
                   >
                     {index <= 8 ? `0${index + 1}` : index + 1}
                   </span>

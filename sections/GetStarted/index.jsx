@@ -81,7 +81,7 @@ const GetStarted = () => {
                   >
                     {index <= 8 ? `0${index + 1}` : index + 1}
                   </span>
-                  <span className='text-[#B0B0B0]'>
+                  <span className='text-[#B0B0B0] md:w-64'>
                     {description}
                   </span>
                 </motion.li>

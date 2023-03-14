@@ -40,7 +40,7 @@ const ExploreCard = ({
           wasThisCardSelected()
             ? 'h-48 md:flex md:h-28 md:items-center md:justify-between lg:bottom-0 lg:flex lg:h-1/4 lg:transform-none lg:items-center lg:justify-between'
             : 'h-9 lg:static lg:h-fit lg:w-auto lg:transform-none'
-        } absolute bottom-0 w-full rounded-2xl bg-[rgba(0,0,0,0.5)] p-7 duration-700 lg:bottom-24 lg:-mt-2.5 lg:-rotate-90 lg:rounded-t-none lg:py-7 `}
+        } absolute bottom-0 w-full rounded-2xl bg-[rgba(0,0,0,0.5)] p-7 duration-700 lg:-mt-2.5 lg:-rotate-90 lg:rounded-t-none lg:py-7 `}
       >
         {wasThisCardSelected() && (
           <>

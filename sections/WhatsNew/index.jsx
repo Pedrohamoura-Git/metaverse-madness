@@ -36,12 +36,12 @@ const GetStarted = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.paddings} flex flex-col items-center justify-around lg:flex-row`}
+        className={`${styles.paddings} 2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8`}
       >
         {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
 
-        <div className='mb- max-w-md sm:w-full'>
-          <TypingText title='| Whats New?' textStyles='uppercase' />
+        <div className='flex-[0.95] flex justify-center flex-col'>
+          <TypingText title='| Whats New?' />
 
           <TitleText title="What's new about Metaversus?" />
 
@@ -50,7 +50,7 @@ const GetStarted = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
-            className='flex w-max flex-wrap items-center'
+            className='flex flex-wrap justify-evenly lg:justify-between gap-[24px]'
           >
             {(newsList ?? []).map(
               ({ id, title, img, description }, index) => (
@@ -61,18 +61,18 @@ const GetStarted = () => {
                     index * 0.5,
                     0.75,
                   )}
-                  className='mb-4'
+                  className='flex-1 flex flex-col sm:max-w-[250px] min-w-[210px] items-center lg:items-baseline'
                   key={id}
                 >
                   <div className='glassmorphism mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-3xl'>
                     <img
                       src={img}
                       alt={description}
-                      className='w-h-6 h-6'
+                      className='h-6 w-h-6'
                     />
                   </div>
                   <h5 className='mb-4 text-2xl font-bold'>{title}</h5>
-                  <p className='text-[#B0B0B0] md:w-64'>
+                  <p className='text-[#B0B0B0] text-lg text-center lg:text-left'>
                     {description}
                   </p>
                 </motion.li>
@@ -84,7 +84,7 @@ const GetStarted = () => {
         <motion.div variants={planetVariants('right')}>
           <img
             src='/whats-new.png'
-            className='h-full w-full lg:max-h-[580px] lg:max-w-[530px]'
+            className='h-full w-full md:max-h-[390px] md:max-w-[390px] m-auto'
             alt=''
           />
         </motion.div>

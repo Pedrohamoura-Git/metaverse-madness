@@ -26,7 +26,7 @@ export const TitleText = ({ title, textStyles, slot }) => (
     variants={textVariant2}
     initial='hidden'
     whileInView='show'
-    className={`mt-[8px] mb-12 text-[40px] font-bold text-white md:text-[64px] ${textStyles}`}
+    className={`mt-[8px] mb-24 text-[40px] text-center font-bold text-white md:text-[64px] ${textStyles}`}
   >
     {title}
     {slot !== undefined && { slot }}

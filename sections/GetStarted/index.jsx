@@ -36,18 +36,18 @@ const GetStarted = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.paddings} flex flex-col items-center justify-around lg:flex-row`}
+        className={`${styles.paddings} flex flex-col items-center justify-around lg:flex-row gap-8`}
       >
         {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
         <motion.div variants={planetVariants('left')}>
           <img
             src='/get-started.png'
-            className='h-full w-full lg:max-h-[580px] lg:max-w-[530px]'
+            className='h-full w-full md:max-h-[580px] md:max-w-[530px]'
             alt=''
           />
         </motion.div>
 
-        <div className='max-w-md sm:w-full'>
+        <div className='sm:w-full'>
           <TypingText
             title='| How Metaversus Works'
             textStyles='uppercase'
@@ -63,6 +63,7 @@ const GetStarted = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
+            className="flex flex-col items-center gap-6"
           >
             {(instructionsList ?? []).map(
               ({ description, id }, index) => (
@@ -73,7 +74,7 @@ const GetStarted = () => {
                     index * 0.5,
                     0.75,
                   )}
-                  className='mb-[16px] flex items-center gap-4'
+                  className='flex items-center gap-4'
                   key={id}
                 >
                   <span
@@ -81,7 +82,7 @@ const GetStarted = () => {
                   >
                     {index <= 8 ? `0${index + 1}` : index + 1}
                   </span>
-                  <span className='text-[#B0B0B0] md:w-64'>
+                  <span className='text-[#B0B0B0] md:w-64 text-lg'>
                     {description}
                   </span>
                 </motion.li>

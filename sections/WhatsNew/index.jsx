@@ -36,7 +36,7 @@ const GetStarted = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.paddings} mx-auto flex w-full flex-col gap-8 lg:flex-row 2xl:max-w-[1280px]`}
+        className={`${styles.paddings} mx-auto flex w-full flex-col gap-8 lg:flex-row lg:items-center 2xl:max-w-[1280px]`}
       >
         {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
 

@@ -84,7 +84,7 @@ const GetStarted = () => {
         <motion.div variants={planetVariants('right')}>
           <img
             src='/whats-new.png'
-            className='h-full w-full md:max-h-[390px] md:max-w-[390px] m-auto'
+            className={`${styles.planetsDimensions}`}
             alt=''
           />
         </motion.div>

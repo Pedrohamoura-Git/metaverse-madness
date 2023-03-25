@@ -42,7 +42,7 @@ const GetStarted = () => {
         <motion.div variants={planetVariants('left')}>
           <img
             src='/get-started.png'
-            className='h-full w-full md:max-h-[580px] md:max-w-[530px]'
+            className={`${styles.planetsDimensions}`}
             alt=''
           />
         </motion.div>

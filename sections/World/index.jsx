@@ -30,17 +30,17 @@ const World = () => (
         <img
           src='/people-01.png'
           alt='white-man'
-          className='absolute bottom-24 left-1/3 h-14 w-14 md:left-[45%]'
+          className='absolute bottom-24 left-1/3 h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[45%]'
         />
         <img
           src='/people-02.png'
           alt='white-woman'
-          className='absolute top-[20%] left-1/4 h-14 w-14 md:left-[30%]'
+          className='absolute top-[20%] left-1/4 h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[30%]'
         />
         <img
           src='/people-03.png'
           alt='black-man'
-          className='absolute top-[15%] right-[8%] h-14 w-14 md:right-[12%]'
+          className='absolute top-[15%] right-[8%] h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:right-[12%]'
         />
       </motion.div>
     </motion.div>

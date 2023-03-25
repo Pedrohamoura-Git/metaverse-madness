@@ -17,31 +17,66 @@ const World = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.paddings} mx-auto flex w-full flex-col gap-8 lg:flex-row lg:items-center 2xl:max-w-[1280px]`}
     >
-      <TypingText title='| People in the World' />
-      <TitleText title='Track your friends and invite them to play together in the same world' />
+      <div>
+        <TypingText title='| People in the World' />
+        <TitleText title='Track your friends and invite them to play together in the same world' />
+      </div>
 
-      <motion.div className='relative h-[500px]'>
-        <img
+      <motion.div
+        variants={staggerContainer}
+        initial='hidden'
+        whileInView='show'
+        className='relative h-[500px]'
+      >
+        <motion.img
+          variants={fadeIn('up', 'spring', 0.5, 1)}
           src='/map.png'
           alt='world map'
           className='h-full w-full object-cover'
         />
-
-        <img
-          src='/people-01.png'
-          alt='white-man'
-          className='absolute bottom-24 left-1/3 h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[45%]'
-        />
-        <img
-          src='/people-02.png'
-          alt='white-woman'
-          className='absolute top-[20%] left-1/4 h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[30%]'
-        />
-        <img
-          src='/people-03.png'
-          alt='black-man'
-          className='absolute top-[15%] right-[8%] h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:right-[12%]'
-        />
+        <motion.ul
+          variants={staggerContainer}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.25 }}
+        >
+          <motion.li
+            variants={fadeIn('left', 'tween', 0.75, 0.75)}
+            initial='hidden'
+            whileInView='show'
+            className='absolute bottom-24 left-1/3'
+          >
+            <img
+              src='/people-01.png'
+              alt='white-man'
+              className='h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[45%]'
+            />
+          </motion.li>
+          <motion.li
+            variants={fadeIn('left', 'tween', 1, 0.75)}
+            initial='hidden'
+            whileInView='show'
+            className='absolute top-[20%] left-1/4'
+          >
+            <img
+              src='/people-02.png'
+              alt='white-woman'
+              className='h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[30%]'
+            />
+          </motion.li>
+          <motion.li
+            variants={fadeIn('left', 'tween', 1.25, 0.75)}
+            initial='hidden'
+            whileInView='show'
+            className='absolute top-[15%] right-[8%]'
+          >
+            <img
+              src='/people-03.png'
+              alt='black-man'
+              className='h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:right-[12%]'
+            />
+          </motion.li>
+        </motion.ul>
       </motion.div>
     </motion.div>
   </section>

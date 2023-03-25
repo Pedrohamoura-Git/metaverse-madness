@@ -30,7 +30,7 @@ const GetStarted = () => {
   ]);
 
   return (
-    <section className={`${styles.innerWidth} mx-auto text-white`}>
+    <section className={`${styles.section}`}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'

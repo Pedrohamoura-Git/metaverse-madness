@@ -36,11 +36,11 @@ const GetStarted = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.paddings} 2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8`}
+        className={`${styles.paddings} mx-auto flex w-full flex-col gap-8 lg:flex-row 2xl:max-w-[1280px]`}
       >
         {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
 
-        <div className='flex-[0.95] flex justify-center flex-col'>
+        <div className='flex flex-[0.95] flex-col justify-center'>
           <TypingText title='| Whats New?' />
 
           <TitleText title="What's new about Metaversus?" />
@@ -50,7 +50,7 @@ const GetStarted = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
-            className='flex flex-wrap justify-evenly lg:justify-between gap-[24px]'
+            className='flex max-w-4xl flex-wrap justify-evenly gap-6 md:justify-around md:gap-4'
           >
             {(newsList ?? []).map(
               ({ id, title, img, description }, index) => (
@@ -61,18 +61,18 @@ const GetStarted = () => {
                     index * 0.5,
                     0.75,
                   )}
-                  className='flex-1 flex flex-col sm:max-w-[250px] min-w-[210px] items-center lg:items-baseline'
+                  className='flex min-w-[210px] flex-1 flex-col items-center sm:max-w-[250px] lg:items-baseline'
                   key={id}
                 >
                   <div className='glassmorphism mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-3xl'>
                     <img
                       src={img}
                       alt={description}
-                      className='h-6 w-h-6'
+                      className='w-h-6 h-6'
                     />
                   </div>
                   <h5 className='mb-4 text-2xl font-bold'>{title}</h5>
-                  <p className='text-[#B0B0B0] text-lg text-center lg:text-left'>
+                  <p className='text-center text-lg text-[#B0B0B0] lg:text-left'>
                     {description}
                   </p>
                 </motion.li>

@@ -9,11 +9,11 @@ import { fadeIn, staggerContainer } from '../../utils/motion';
 
 const About = () => (
   <section
-    className={`${styles.paddings} lg:text-[32px] md:text-[24]
-      2xl:max-w-[1100px] w-full mx-auto flex flex-col align-center relative
-      sm:text-[16] text-[14] lg:leading-[57.6px] md:leading-[40px]
-      sm:leading-[30px] leading-[24.4px] font-sans text-center uppercase
-      text-[#C7C7C7]
+    className={`${styles.paddings} align-center relative
+      mx-auto flex w-full flex-col text-center font-sans uppercase
+      leading-[24.4px] text-[14] text-[#C7C7C7] sm:leading-[30px]
+      sm:text-[16] md:leading-[40px] md:text-[24] lg:text-[32px] lg:leading-[57.6px]
+      2xl:max-w-[1100px]
     `}
   >
     <div className='gradient-02 z-0' />
@@ -23,8 +23,8 @@ const About = () => (
       initial='hidden'
       whileInView='show'
       viewport={{ one: false, amount: 0.25 }}
-      className={`${styles.innerWidth} ${styles.flexCenter} flex-col
-        mx-auto`}
+      className={`${styles.innerWidth} ${styles.flexCenter} mx-auto
+        flex-col`}
     >
       <TypingText
         title='| About Metaversus'
@@ -55,7 +55,7 @@ const About = () => (
         <img
           src='/arrow-down.svg'
           alt='arrow down'
-          className='w-[32px] h-[32px] mx-auto mt-8'
+          className='mx-auto mt-8 h-[32px] w-[32px]'
         />
       </motion.a>
     </motion.div>

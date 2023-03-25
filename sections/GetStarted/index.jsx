@@ -53,10 +53,7 @@ const GetStarted = () => {
             textStyles='uppercase lg:text-right'
           />
 
-          <TitleText
-            title='Get started with just a few clicks'
-            textStyles='mb-8'
-          />
+          <TitleText title='Get started with just a few clicks' />
 
           <motion.ol
             variants={staggerContainer}

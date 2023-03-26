@@ -44,7 +44,7 @@ const World = () => (
             variants={fadeIn('left', 'tween', 0.75, 0.75)}
             initial='hidden'
             whileInView='show'
-            className='absolute bottom-24 left-1/3'
+            className='absolute bottom-24 left-[20%] md:left-[35%]'
           >
             <img
               src='/white-man.png'
@@ -56,7 +56,7 @@ const World = () => (
             variants={fadeIn('left', 'tween', 1, 0.75)}
             initial='hidden'
             whileInView='show'
-            className='absolute top-[20%] left-1/4'
+            className='absolute -top-[5%] left-[5%] md:left-[30%]'
           >
             <img
               src='/white-woman.png'
@@ -68,6 +68,7 @@ const World = () => (
             variants={fadeIn('left', 'tween', 1.25, 0.75)}
             initial='hidden'
             whileInView='show'
+            className='absolute top-[5%] -right-[5%] md:right-[5%]'
           >
             <img
               src='/black-man.png'

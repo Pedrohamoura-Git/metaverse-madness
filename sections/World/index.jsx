@@ -47,7 +47,7 @@ const World = () => (
             className='absolute bottom-24 left-1/3'
           >
             <img
-              src='/people-01.png'
+              src='/white-man.png'
               alt='white-man'
               className='h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[45%]'
             />
@@ -59,7 +59,7 @@ const World = () => (
             className='absolute top-[20%] left-1/4'
           >
             <img
-              src='/people-02.png'
+              src='/white-woman.png'
               alt='white-woman'
               className='h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[30%]'
             />

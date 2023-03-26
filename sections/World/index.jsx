@@ -15,7 +15,7 @@ const World = () => (
       initial='hidden'
       whileInView='show'
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.paddings} mx-auto flex w-full flex-col gap-8 lg:flex-row lg:items-center 2xl:max-w-[1280px]`}
+      className={`${styles.paddings} mx-auto flex w-full flex-col gap-8 lg:items-center 2xl:max-w-[1280px]`}
     >
       <div>
         <TypingText title='| People in the World' />

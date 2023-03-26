@@ -76,11 +76,27 @@ const World = () => (
               className={`${styles.worldPeople}`}
             />
           </motion.li>
+
+          <motion.li
+            variants={fadeIn('left', 'tween', 1.5, 0.75)}
+            initial='hidden'
+            whileInView='show'
+            className='hidden md:absolute md:-left-[10%] md:top-[10%] md:block'
           >
             <img
-              src='/people-03.png'
-              alt='black-man'
-              className='h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:right-[12%]'
+              src='/world-billboard-1.png'
+              alt='upside down billboard'
+            />
+          </motion.li>
+          <motion.li
+            variants={fadeIn('left', 'tween', 1.75, 0.75)}
+            initial='hidden'
+            whileInView='show'
+            className='hidden md:absolute md:-right-[10%] md:top-[15%] md:block'
+          >
+            <img
+              src='/world-billboard-2.png'
+              alt='Hawkins Labs billboard'
             />
           </motion.li>
         </motion.ul>

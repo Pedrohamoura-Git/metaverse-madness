@@ -26,7 +26,8 @@ const styles = {
   planetsDimensions:
     'm-auto h-full w-full md:max-h-[450px] md:max-w-[450px]',
 
-  //
+  // World
+  worldPeople: 'h-18 w-18 rounded-full',
 };
 
 export default styles;

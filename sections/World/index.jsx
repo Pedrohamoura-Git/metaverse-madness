@@ -48,8 +48,8 @@ const World = () => (
           >
             <img
               src='/white-man.png'
-              alt='white-man'
-              className='h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[45%]'
+              alt='white man'
+              className={`${styles.worldPeople}`}
             />
           </motion.li>
           <motion.li
@@ -60,15 +60,21 @@ const World = () => (
           >
             <img
               src='/white-woman.png'
-              alt='white-woman'
-              className='h-14 w-14 rounded-full outline outline-4 outline-offset-2 outline-gray-500 md:left-[30%]'
+              alt='white woman'
+              className={`${styles.worldPeople}`}
             />
           </motion.li>
           <motion.li
             variants={fadeIn('left', 'tween', 1.25, 0.75)}
             initial='hidden'
             whileInView='show'
-            className='absolute top-[15%] right-[8%]'
+          >
+            <img
+              src='/black-man.png'
+              alt='black man'
+              className={`${styles.worldPeople}`}
+            />
+          </motion.li>
           >
             <img
               src='/people-03.png'

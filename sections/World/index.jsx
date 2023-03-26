@@ -44,7 +44,7 @@ const World = () => (
             variants={fadeIn('left', 'tween', 0.75, 0.75)}
             initial='hidden'
             whileInView='show'
-            className='absolute bottom-24 left-[20%] md:left-[35%]'
+            className='absolute bottom-24 left-[20%] md:left-[35%] lg:left-[40%]'
           >
             <img
               src='/white-man.png'
@@ -56,7 +56,7 @@ const World = () => (
             variants={fadeIn('left', 'tween', 1, 0.75)}
             initial='hidden'
             whileInView='show'
-            className='absolute -top-[5%] left-[5%] md:left-[30%]'
+            className='absolute -top-[5%] left-[5%] md:left-[30%] lg:left-[35%]'
           >
             <img
               src='/white-woman.png'
@@ -68,7 +68,7 @@ const World = () => (
             variants={fadeIn('left', 'tween', 1.25, 0.75)}
             initial='hidden'
             whileInView='show'
-            className='absolute top-[5%] -right-[5%] md:right-[5%]'
+            className='absolute top-[5%] -right-[5%] md:right-[5%] lg:right-[21%]'
           >
             <img
               src='/black-man.png'
@@ -81,7 +81,7 @@ const World = () => (
             variants={fadeIn('left', 'tween', 1.5, 0.75)}
             initial='hidden'
             whileInView='show'
-            className='hidden md:absolute md:-left-[10%] md:top-[10%] md:block'
+            className='hidden md:absolute md:-left-[10%] md:top-[10%] md:block lg:left-0'
           >
             <img
               src='/world-billboard-1.png'
@@ -92,7 +92,7 @@ const World = () => (
             variants={fadeIn('left', 'tween', 1.75, 0.75)}
             initial='hidden'
             whileInView='show'
-            className='hidden md:absolute md:-right-[10%] md:top-[15%] md:block'
+            className='hidden md:absolute md:-right-[10%] md:top-[15%] md:block lg:right-0'
           >
             <img
               src='/world-billboard-2.png'

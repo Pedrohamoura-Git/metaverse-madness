@@ -7,25 +7,9 @@ import { staggerContainer, planetVariants } from '../../utils/motion';
 
 import { TitleText, TypingText, NewFeatures } from '../../components';
 
+import { newFeatures } from '../../constants';
 
 const GetStarted = () => {
-  const [newsList] = useState([
-    {
-      id: 'news-1',
-      title: 'A new world',
-      img: 'vrpano.svg',
-      description:
-        'we have the latest update with new world for you to try never mind',
-    },
-    {
-      id: 'news-2',
-      title: 'More realistic',
-      img: 'headset.svg',
-      description:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
-    },
-  ]);
-
   return (
     <section className={`${styles.section}`}>
       <motion.div

@@ -44,12 +44,14 @@ export const startingFeatures = [
 
 export const newFeatures = [
   {
+    id: 'news-1',
     imgUrl: '/vrpano.svg',
     title: 'A new world',
     subtitle:
       'we have the latest update with new world for you to try never mind',
   },
   {
+    id: 'news-2',
     imgUrl: '/headset.svg',
     title: 'More realistic',
     subtitle:

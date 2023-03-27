@@ -14,7 +14,7 @@ const styles = {
   navPadding: 'pt-[98px]',
 
   // sections
-  section: `${innerWidth} mx-auto text-white z-10`,
+  section: `${innerWidth} mx-auto text-white z-10 max-w-[90%]`,
 
   // hero section
   heroHeading:

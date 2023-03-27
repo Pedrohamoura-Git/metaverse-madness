@@ -1,15 +1,14 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { section } from '../../styles';
+import { section, flexCenter } from '../../styles';
 
 import { TitleText, TypingText, InsightCard } from '../../components';
 
 import { insights } from '../../constants';
 
 const Insights = () => (
-  <section className={`${section}`}>
+  <section className={`${section} ${flexCenter} flex-col`}>
     <TypingText title='| Insight' />
 
     <TitleText title='Insight about metaverse' />

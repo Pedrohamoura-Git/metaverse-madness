@@ -2,29 +2,14 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
+import { startingFeatures } from '../../constants';
+
 import styles from '../../styles';
 import { staggerContainer, planetVariants } from '../../utils/motion';
 
 import { TitleText, TypingText, StartSteps } from '../../components';
 
 const GetStarted = () => {
-  const [instructionsList] = useState([
-    {
-      id: 'instruction-1',
-      description:
-        'Find a world that suits you and you want to enter',
-    },
-    {
-      id: 'instruction-2',
-      description: 'Enter the world by reading basmalah to be safe',
-    },
-    {
-      id: 'instruction-3',
-      description:
-        'No need to beat around the bush, just stay on the gas and have fun',
-    },
-  ]);
-
   return (
     <section className={`${styles.section}`}>
       <motion.div

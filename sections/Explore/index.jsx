@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import styles from '../../styles';
+import { section, paddings, innerWidth } from '../../styles';
 import { staggerContainer } from '../../utils/motion';
 import { exploreWorlds } from '../../constants';
 
@@ -16,7 +16,7 @@ const Explore = () => {
   return (
     <section
       className={`
-        ${styles.paddings} ${styles.section} 2xl:max-w-[1280px]
+        ${section} ${paddings} 2xl:max-w-[1280px]
         `}
       id='explore'
     >
@@ -25,7 +25,7 @@ const Explore = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={`${innerWidth} mx-auto flex flex-col`}
       >
         <TypingText
           title='| The World'

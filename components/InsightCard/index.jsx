@@ -1,16 +1,13 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '../../styles';
+import { insightList, insightItem } from '../../styles';
 import { staggerContainer } from '../../utils/motion';
 
 const InsightCard = ({ insights }) => (
-  <motion.ul
-    variants={staggerContainer}
-    className={`${styles.insightList}`}
-  >
+  <motion.ul variants={staggerContainer} className={`${insightList}`}>
     {(insights ?? []).map(({ id, imgUrl, title, subtitle }) => (
-      <motion.li key={id} className={`${styles.insightItem}`}>
+      <motion.li key={id} className={`${insightItem}`}>
         <img
           src={imgUrl}
           alt={title}

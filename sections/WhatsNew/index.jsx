@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '../../styles';
+import { section, paddings, planetsDimensions } from '../../styles';
 
 import { staggerContainer, planetVariants } from '../../utils/motion';
 
@@ -11,13 +11,13 @@ import { newFeatures } from '../../constants';
 
 const GetStarted = () => {
   return (
-    <section className={`${styles.section}`}>
+    <section className={`${section}`}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.paddings} mx-auto flex w-full flex-col gap-8 lg:flex-row lg:items-center 2xl:max-w-[1280px]`}
+        className={`${paddings} mx-auto flex w-full flex-col gap-8 lg:flex-row lg:items-center 2xl:max-w-[1280px]`}
       >
         {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
 
@@ -32,7 +32,7 @@ const GetStarted = () => {
         <motion.div variants={planetVariants('right')}>
           <img
             src='/whats-new.png'
-            className={`${styles.planetsDimensions}`}
+            className={`${planetsDimensions}`}
             alt=''
           />
         </motion.div>

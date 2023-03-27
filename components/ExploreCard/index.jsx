@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import styles from '../../styles';
+import { flexCenter } from '../../styles';
 import { fadeIn } from '../../utils/motion';
 
 const ExploreCard = ({
@@ -45,7 +45,7 @@ const ExploreCard = ({
         {wasThisCardSelected() && (
           <>
             <button
-              className={`${styles.flexCenter} bg-[rgba(255, 255, 255, 0.25) glassmorphism mb-4 mt-6 flex h-[60px] w-max rounded-3xl p-3 md:my-0 lg:m-0`}
+              className={`${flexCenter} bg-[rgba(255, 255, 255, 0.25) glassmorphism mb-4 mt-6 flex h-[60px] w-max rounded-3xl p-3 md:my-0 lg:m-0`}
             >
               <img
                 src='/headset.svg'

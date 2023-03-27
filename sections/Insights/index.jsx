@@ -2,14 +2,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '../../styles';
+import { section } from '../../styles';
 
 import { TitleText, TypingText, InsightCard } from '../../components';
 
 import { insights } from '../../constants';
 
 const Insights = () => (
-  <section className={`${styles.section}`}>
+  <section className={`${section}`}>
     <TypingText title='| Insight' />
 
     <TitleText title='Insight about metaverse' />

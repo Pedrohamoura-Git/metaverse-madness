@@ -2,7 +2,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import styles from '../../styles';
+import {
+  yPaddings,
+  innerWidth,
+  heroHeading,
+  heroDText,
+} from '../../styles';
 import {
   slideIn,
   staggerContainer,
@@ -10,48 +15,48 @@ import {
 } from '../../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16px pl-6`}>
+  <section className={`${yPaddings} sm:pl-16px pl-6`}>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
       whileInView='show'
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className={`${innerWidth} mx-auto flex flex-col`}
     >
-      <div className='flex justify-center items-center flex-col relative z-10'>
+      <div className='relative z-10 flex flex-col items-center justify-center'>
         <motion.h1
           variants={textVariant(1.1)}
-          className={styles.heroHeading}
+          className={heroHeading}
         >
           metaverse
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
-          className='flex flex-row justify-center items-center'
+          className='flex flex-row items-center justify-center'
         >
-          <h1 className={styles.heroHeading}>Ma</h1>
-          <div className={styles.heroDText} />
-          <h1 className={styles.heroHeading}>ness</h1>
+          <h1 className={heroHeading}>Ma</h1>
+          <div className={heroDText} />
+          <h1 className={heroHeading}>ness</h1>
         </motion.div>
       </div>
 
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className='relative w-full md:-mt-[20px] -mt-[12px]'
+        className='relative -mt-[12px] w-full md:-mt-[20px]'
       >
-        <div className='absolute -top-[30px] w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0]' />
+        <div className='hero-gradient absolute -top-[30px] z-[0] h-[300px] w-full rounded-tl-[140px]' />
         <img
           src='/cover.png'
           alt='cover'
-          className='w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative'
+          className='relative z-10 h-[350px] w-full rounded-tl-[140px] object-cover sm:h-[500px]'
         />
 
         <a href='#explore'>
-          <div className='w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10'>
+          <div className='relative z-10 -mt-[50px] flex w-full justify-end pr-[40px] sm:-mt-[70px]'>
             <img
               src='/stamp.png'
               alt='stamp'
-              className='sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain'
+              className='h-[100px] w-[100px] object-contain sm:h-[155px] sm:w-[155px]'
             />
           </div>
         </a>

@@ -3,19 +3,19 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-import styles from '../../styles';
+import { section, paddings, worldPeople } from '../../styles';
 import { staggerContainer, fadeIn } from '../../utils/motion';
 
 import { TitleText, TypingText } from '../../components/CustomTexts';
 
 const World = () => (
-  <section className={`${styles.section}`}>
+  <section className={`${section}`}>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
       whileInView='show'
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.paddings} mx-auto flex w-full flex-col gap-8 lg:items-center 2xl:max-w-[1280px]`}
+      className={`${paddings} mx-auto flex w-full flex-col gap-8 lg:items-center 2xl:max-w-[1280px]`}
     >
       <div>
         <TypingText title='| People in the World' />
@@ -49,7 +49,7 @@ const World = () => (
             <img
               src='/white-man.png'
               alt='white man'
-              className={`${styles.worldPeople}`}
+              className={`${worldPeople}`}
             />
           </motion.li>
           <motion.li
@@ -61,7 +61,7 @@ const World = () => (
             <img
               src='/white-woman.png'
               alt='white woman'
-              className={`${styles.worldPeople}`}
+              className={`${worldPeople}`}
             />
           </motion.li>
           <motion.li
@@ -73,7 +73,7 @@ const World = () => (
             <img
               src='/black-man.png'
               alt='black man'
-              className={`${styles.worldPeople}`}
+              className={`${worldPeople}`}
             />
           </motion.li>
 

@@ -4,26 +4,26 @@ import { motion } from 'framer-motion';
 
 import { startingFeatures } from '../../constants';
 
-import styles from '../../styles';
+import { section, paddings, planetsDimensions } from '../../styles';
 import { staggerContainer, planetVariants } from '../../utils/motion';
 
 import { TitleText, TypingText, StartSteps } from '../../components';
 
 const GetStarted = () => {
   return (
-    <section className={`${styles.section}`}>
+    <section className={`${section}`}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.paddings} flex flex-col items-center justify-around gap-8 lg:flex-row`}
+        className={`${paddings} flex flex-col items-center justify-around gap-8 lg:flex-row`}
       >
         {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
         <motion.div variants={planetVariants('left')}>
           <img
             src='/get-started.png'
-            className={`${styles.planetsDimensions}`}
+            className={`${planetsDimensions}`}
             alt=''
           />
         </motion.div>

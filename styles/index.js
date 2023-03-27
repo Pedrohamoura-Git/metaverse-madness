@@ -32,7 +32,7 @@ const styles = {
   // Insights
   insightList: 'flex flex-col gap-8',
   insightItem:
-    'm-auto w-[366px] flex flex-col gap-4 items-center justify-center',
+    'm-auto w-[366px] flex flex-col gap-4 items-center justify-center md:flex-row md:w-4/5 md:gap-16',
 };
 
 export default styles;

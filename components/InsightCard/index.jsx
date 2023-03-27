@@ -14,10 +14,12 @@ const InsightCard = ({ insights }) => (
         <img
           src={imgUrl}
           alt={title}
-          className={`h-[250px] rounded-3xl object-cover`}
+          className={`h-[250px] rounded-3xl object-cover md:h-[250px] md:w-[270px]`}
         />
-        <h5 className='text-[26px]'>{title}</h5>
-        <p className='text-sm'>{subtitle}</p>
+        <div>
+          <h5 className='text-[26px]'>{title}</h5>
+          <p className='text-sm'>{subtitle}</p>
+        </div>
       </motion.li>
     ))}
   </motion.ul>

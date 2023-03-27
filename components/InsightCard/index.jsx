@@ -5,12 +5,19 @@ import styles from '../../styles';
 import { staggerContainer } from '../../utils/motion';
 
 const InsightCard = ({ insights }) => (
-  <motion.ul variants={staggerContainer}>
+  <motion.ul
+    variants={staggerContainer}
+    className={`${styles.insightList}`}
+  >
     {(insights ?? []).map(({ id, imgUrl, title, subtitle }) => (
-      <motion.li key={id}>
-        <img src={imgUrl} alt={title} />
-        <h5>{title}</h5>
-        <p>{subtitle}</p>
+      <motion.li key={id} className={`${styles.insightItem}`}>
+        <img
+          src={imgUrl}
+          alt={title}
+          className={`h-[250px] rounded-3xl object-cover`}
+        />
+        <h5 className='text-[26px]'>{title}</h5>
+        <p className='text-sm'>{subtitle}</p>
       </motion.li>
     ))}
   </motion.ul>

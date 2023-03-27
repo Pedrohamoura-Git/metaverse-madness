@@ -14,7 +14,7 @@ const styles = {
   navPadding: 'pt-[98px]',
 
   // sections
-  section: `${innerWidth} mx-auto text-white`,
+  section: `${innerWidth} mx-auto text-white z-10`,
 
   // hero section
   heroHeading:
@@ -28,6 +28,11 @@ const styles = {
 
   // World
   worldPeople: 'h-18 w-18 rounded-full',
+
+  // Insights
+  insightList: 'flex flex-col gap-8',
+  insightItem:
+    'm-auto w-[366px] flex flex-col gap-4 items-center justify-center',
 };
 
 export default styles;

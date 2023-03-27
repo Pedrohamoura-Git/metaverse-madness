@@ -24,10 +24,17 @@ const InsightCard = ({ insights }) => (
             alt={title}
             className={`h-[250px] rounded-3xl object-cover md:h-[250px] md:w-[270px]`}
           />
-          <div>
-            <h5 className='text-[26px]'>{title}</h5>
+          <div className='lg:w-96'>
+            <h5 className='mb-4 text-[26px] lg:text-4xl'>{title}</h5>
             <p className='text-sm'>{subtitle}</p>
           </div>
+          <a href='' className='hidden lg:block' target='_blank'>
+            <img
+              src='/arrow.svg'
+              alt='button to enter'
+              className='rounded-full border p-3 lg:h-20 lg:w-20'
+            />
+          </a>
         </motion.li>
       ),
     )}

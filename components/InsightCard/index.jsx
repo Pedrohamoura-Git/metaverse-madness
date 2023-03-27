@@ -24,7 +24,7 @@ const InsightCard = ({ insights }) => (
             alt={title}
             className={`h-[250px] rounded-3xl object-cover md:h-[250px] md:w-[270px]`}
           />
-          <div className='lg:w-96'>
+          <div className='lg:w-[32rem]'>
             <h5 className='mb-4 text-[26px] lg:text-4xl'>{title}</h5>
             <p className='text-sm'>{subtitle}</p>
           </div>

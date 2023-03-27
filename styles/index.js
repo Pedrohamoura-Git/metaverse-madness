@@ -32,6 +32,6 @@ export const planetsDimensions =
 export const worldPeople = 'h-18 w-18 rounded-full';
 
 // Insights
-export const insightList = 'flex flex-col gap-8';
+export const insightList = 'flex flex-col gap-8 lg:w-[90%]';
 export const insightItem =
-  'm-auto w-[366px] flex flex-col gap-4 items-center justify-center md:flex-row md:w-4/5 md:gap-16 lg:w-full';
+  'm-auto w-[366px] flex flex-col gap-4 items-center justify-center md:flex-row md:w-4/5 md:gap-16 lg:w-full lg:justify-between';

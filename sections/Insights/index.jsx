@@ -6,12 +6,15 @@ import styles from '../../styles';
 
 import { TitleText, TypingText, InsightCard } from '../../components';
 
+import { insights } from '../../constants';
+
 const Insights = () => (
   <section className={`${styles.section}`}>
     <TypingText title='| Insight' />
 
     <TitleText title='Insight about metaverse' />
 
+    <InsightCard insights={insights} />
   </section>
 );
 

@@ -53,7 +53,11 @@ Users should be able to:
 
 ### Useful resources
 
-- <a href="" alt="" target="_blank"> resource </a>
+- <a href="https://www.joshwcomeau.com/react/the-perils-of-rehydration/" alt="" target="_blank">The Perils of Rehydration </a>
+- <a href="https://blog.logrocket.com/next-js-font-optimization/" alt="" target="_blank">NextJs font optimization </a>
+- <a href="https://nextjs.org/docs/messages/no-stylesheets-in-head-component" alt="" target="_blank"> No Stylesheets In Head Component </a>
+
+
 ## Author
 
 - My Portfolio - [portfolio](https://pedro-meuportfolio.netlify.app)

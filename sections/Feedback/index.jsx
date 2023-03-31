@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { section } from '../../styles';
 import { staggerContainer, fadeIn } from '../../utils/motion';
 
+import { FeedbackCards } from '../../components';
 
 const Feedback = () => {
   const [feedbacks, setFeedbacks] = useState([
@@ -26,6 +27,7 @@ const Feedback = () => {
   return (
     <section className={`${section} mt-14`}>
       <motion.div>
+        <FeedbackCards feedbacks={feedbacks} />
 
         <img
           src='/planet-09.png'

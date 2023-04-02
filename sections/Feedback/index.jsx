@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { section } from '../../styles';
-import { staggerContainer, fadeIn } from '../../utils/motion';
+import { staggerContainer, fadeIn, zoomIn } from '../../utils/motion';
 
 import { FeedbackCards } from '../../components';
 
@@ -26,14 +26,21 @@ const Feedback = () => {
 
   return (
     <section className={`${section} mt-14`}>
-      <motion.div>
+      <motion.div
+        variants={staggerContainer}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0.25 }}
+      >
         <FeedbackCards feedbacks={feedbacks} />
 
-        <img
-          src='/planet-09.png'
-          alt='rocket among planets'
-          className='mt-8 h-52 rounded-3xl object-cover'
-        />
+        <motion.div
+          variants={fadeIn('left', 'tween', 0.75, 0.75)}
+          initial='hidden'
+          whileInView='show'
+          className='lg:relative lg:flex-1'
+        >
+        </motion.div>
       </motion.div>
     </section>
   );

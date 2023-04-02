@@ -14,12 +14,17 @@ const FeedbackCards = ({ feedbacks }) => {
     >
       {feedbacks.length &&
         feedbacks.map(({ name, occupation, feedback }, index) => (
-          <li key={name + index} className='rounded-3xl border p-4'>
-            <div className='feedback-gradient'></div>
-            <h5 className='text-2xl font-bold'>{name}</h5>
-            <h6 className='mt-2 text-xs'>{occupation}</h6>
+          <li
+            key={name + index}
+            className='rounded-3xl border p-4 md:h-80 md:p-8 lg:flex lg:h-[610px] lg:flex-col lg:justify-end'
+          >
+            <div className='feedback-gradient' />
+            <h5 className='text-2xl font-bold md:text-4xl'>{name}</h5>
+            <h6 className='mt-2 text-xs md:text-lg'>{occupation}</h6>
 
-            <p className='mt-6 text-lg leading-9'>{feedback}</p>
+            <p className='mt-6 text-lg leading-9 md:text-2xl md:leading-10'>
+              {feedback}
+            </p>
           </li>
         ))}
     </motion.ul>

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-import { section } from '../../styles';
+import { section, innerWidth, paddings } from '../../styles';
 import { staggerContainer, fadeIn, zoomIn } from '../../utils/motion';
 
 import { FeedbackCards } from '../../components';
@@ -31,6 +31,7 @@ const Feedback = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
+        className={`${innerWidth} ${paddings} lg:flex lg:items-center lg:gap-6`}
       >
         <FeedbackCards feedbacks={feedbacks} />
 

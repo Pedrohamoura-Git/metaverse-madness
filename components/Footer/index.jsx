@@ -1,15 +1,21 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { section, innerWidth, paddings } from '../../styles';
-import { staggerContainer, fadeIn, zoomIn } from '../../utils/motion';
+import { fadeIn } from '../../utils/motion';
 import { TitleText, MetaverseBtn } from '../index';
 
 const Footer = () => (
   <footer className={`relative ${section}`}>
-    <div className={`${innerWidth} ${paddings} `}>
+    <motion.div
+      variants={fadeIn('up', 'tween', 0.2, 0.75)}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${innerWidth} ${paddings} `}
+    >
       <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between'>
         <TitleText
           title='Enter the Metaverse'
@@ -62,7 +68,7 @@ const Footer = () => (
       </div>
 
       <div className='footer-gradient absolute bottom-0 right-0' />
-    </div>
+    </motion.div>
   </footer>
 );
 

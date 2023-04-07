@@ -14,7 +14,7 @@ const MetaverseBtn = ({ color, styles }) => {
 
   return (
     <button
-      className={`${flexCenter} mb-4 mt-6 flex h-[60px] w-max gap-3 rounded-[32px] p-4 md:my-0 lg:m-0 ${applyButtonColor()} ${styles}`}
+      className={`${flexCenter} mb-4 mt-6 flex h-[60px] w-max gap-3 rounded-[32px] py-4 px-6 md:my-0 lg:m-0 ${applyButtonColor()} ${styles}`}
     >
       <img
         src='/headset.svg'

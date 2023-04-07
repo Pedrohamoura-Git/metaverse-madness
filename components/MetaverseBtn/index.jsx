@@ -16,13 +16,9 @@ const MetaverseBtn = ({ color, styles }) => {
     <button
       className={`${flexCenter} mb-4 mt-6 flex h-[60px] w-max gap-3 rounded-[32px] py-4 px-6 md:my-0 lg:m-0 ${applyButtonColor()} ${styles}`}
     >
-      <img
-        src='/headset.svg'
-        alt='headset'
-        className='h-6 w-6 lg:h-[30px] lg:w-[30px]'
-      />
+      <img src='/headset.svg' alt='headset' className='h-6 w-6' />
 
-      <p className='text-left text-base font-bold uppercase text-white'>
+      <p className='text-left text-base text-white'>
         Enter metaverse
       </p>
     </button>

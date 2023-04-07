@@ -6,6 +6,7 @@ import NewFeatures from './NewFeatures';
 import InsightCard from './InsightCard';
 import FeedbackCards from './FeedbackCards';
 import Footer from './Footer';
+import MetaverseBtn from './MetaverseBtn';
 
 export {
   Navbar,
@@ -17,4 +18,5 @@ export {
   InsightCard,
   FeedbackCards,
   Footer,
+  MetaverseBtn,
 };

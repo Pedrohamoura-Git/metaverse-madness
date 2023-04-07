@@ -2,8 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { flexCenter } from '../../styles';
 import { fadeIn } from '../../utils/motion';
+
+import { MetaverseBtn } from '../index';
 
 const ExploreCard = ({
   id,
@@ -44,19 +45,7 @@ const ExploreCard = ({
       >
         {wasThisCardSelected() && (
           <>
-            <button
-              className={`${flexCenter} bg-[rgba(255, 255, 255, 0.25) glassmorphism mb-4 mt-6 flex h-[60px] w-max rounded-3xl p-3 md:my-0 lg:m-0`}
-            >
-              <img
-                src='/headset.svg'
-                alt='headset'
-                className='mr-6 h-[30px] w-[30px]'
-              />
-
-              <p className='text-left text-base font-bold uppercase text-white'>
-                Enter metaverse
-              </p>
-            </button>
+            <MetaverseBtn />
           </>
         )}
 

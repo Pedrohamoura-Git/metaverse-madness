@@ -2,7 +2,7 @@ import React from 'react';
 
 import { flexCenter } from '../../styles';
 
-const MetaverseBtn = ({ color }) => {
+const MetaverseBtn = ({ color, styles }) => {
   const applyButtonColor = () => {
     switch (color) {
       case 'blue':
@@ -14,15 +14,15 @@ const MetaverseBtn = ({ color }) => {
 
   return (
     <button
-      className={`${flexCenter} mb-4 mt-6 flex h-[60px] w-max rounded-3xl p-3 md:my-0 lg:m-0 ${applyButtonColor()}`}
+      className={`${flexCenter} mb-4 mt-6 flex h-[60px] w-max gap-3 rounded-[32px] p-4 md:my-0 lg:m-0 ${applyButtonColor()} ${styles}`}
     >
       <img
         src='/headset.svg'
         alt='headset'
-        className='mr-6 h-[30px] w-[30px]'
+        className='h-6 w-6 lg:h-[30px] lg:w-[30px]'
       />
 
-      <p className='text-base font-bold text-left text-white uppercase'>
+      <p className='text-left text-base font-bold uppercase text-white'>
         Enter metaverse
       </p>
     </button>

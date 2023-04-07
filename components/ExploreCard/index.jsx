@@ -45,7 +45,7 @@ const ExploreCard = ({
       >
         {wasThisCardSelected() && (
           <>
-            <MetaverseBtn />
+            <MetaverseBtn styles='uppercase font-bold' />
           </>
         )}
 

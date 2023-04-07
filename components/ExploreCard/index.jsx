@@ -54,7 +54,7 @@ const ExploreCard = ({
             wasThisCardSelected()
               ? 'bottom-7 mt-6 ml-3 text-2xl md:static md:mt-0 lg:m-0'
               : 'bottom-[-10px] left-[50%] max-w-max -translate-x-2/4 -translate-y-2/4 lg:w-max lg:transform-none'
-          } absolute text-lg font-bold duration-500 md:text-3xl lg:static lg:w-max`}
+          } absolute text-lg font-bold duration-500 md:text-2xl lg:static lg:w-max`}
         >
           {title}
         </p>

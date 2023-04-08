@@ -22,8 +22,8 @@ const ExploreCard = ({
     <motion.div
       className={`${
         wasThisCardSelected()
-          ? 'lg:relative lg:col-start-2 lg:col-end-4 lg:row-end-1 lg:mb-24'
-          : 'lg:row-end-2'
+          ? 'lg:relative lg:col-start-2 lg:col-end-8 lg:row-end-1 lg:mb-24'
+          : `lg:col-span-2 lg:row-end-2`
       } lg:height-full relative gap-3 lg:static`}
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       onClick={() => updateSelectedWorld(id)}

@@ -19,7 +19,10 @@ const World = () => (
     >
       <div>
         <TypingText title='| People in the World' />
-        <TitleText title='Track your friends and invite them to play together in the same world' />
+        <TitleText
+          title='Track your friends and invite them to play together in the same world'
+          textStyles='max-w-[950px]'
+        />
       </div>
 
       <motion.div

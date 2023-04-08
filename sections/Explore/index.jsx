@@ -11,7 +11,7 @@ import { ExploreCard, TitleText, TypingText } from '../../components';
 import { useState } from 'react';
 
 const Explore = () => {
-  const [selectedWorld, updateSelectedWorld] = useState('world-2');
+  const [selectedWorld, updateSelectedWorld] = useState('world-1');
 
   return (
     <section

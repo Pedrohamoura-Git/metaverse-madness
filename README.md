@@ -56,6 +56,8 @@ Users should be able to:
 - <a href="https://www.joshwcomeau.com/react/the-perils-of-rehydration/" alt="" target="_blank">The Perils of Rehydration </a>
 - <a href="https://blog.logrocket.com/next-js-font-optimization/" alt="" target="_blank">NextJs font optimization </a>
 - <a href="https://nextjs.org/docs/messages/no-stylesheets-in-head-component" alt="" target="_blank"> No Stylesheets In Head Component </a>
+- <a href="https://jackyef.com/posts/transitioning-between-2-different-elements-with-flip#invert" alt="" target="_blank"> Flip animation technique </a>
+- <a href="https://www.reddit.com/r/learnreactjs/comments/v6tefq/learn_framer_motion_animate_css_grid_and_flexbox/" alt="" target="_blank"> Learn Framer Motion: Animate CSS Grid and Flexbox Layouts </a>
 
 
 ## Author

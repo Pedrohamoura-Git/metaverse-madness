@@ -42,13 +42,13 @@ const Hero = () => (
 
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className='relative -mt-[12px] w-full md:-mt-[20px]'
+        className='relative -mt-[12px] w-full md:-mt-[60px]'
       >
         <div className='hero-gradient absolute -top-[30px] z-[0] h-[300px] w-full rounded-tl-[140px]' />
         <img
           src='/cover.png'
           alt='cover'
-          className='relative z-10 h-[350px] w-full rounded-tl-[140px] object-cover sm:h-[500px]'
+          className='relative z-10 h-[350px] w-full rounded-tl-[140px] object-cover sm:h-[450px]'
         />
 
         <a href='#explore'>

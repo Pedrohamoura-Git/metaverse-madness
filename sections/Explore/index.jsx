@@ -42,7 +42,7 @@ const Explore = () => {
           textStyles='text-center'
         />
 
-        <div className='flex min-h-[70vh] flex-col gap-5 sm:min-h-[30vh] md:mt-[50px] md:min-h-full lg:grid lg:grid-flow-col lg:grid-cols-8 lg:grid-rows-2 lg:flex-row'>
+        <div className='flex min-h-[70vh] flex-col gap-5 sm:min-h-[30vh] md:min-h-full lg:grid lg:grid-flow-col lg:grid-cols-8 lg:grid-rows-2 lg:flex-row'>
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               {...world}

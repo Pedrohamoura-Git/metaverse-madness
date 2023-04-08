@@ -16,8 +16,6 @@ const ExploreCard = ({
 }) => {
   const wasThisCardSelected = () => !!(id === selectedWorld);
 
-  // TODO: Since it's not possible to animate grid transition, I have to think of a way to simulate the transition with transform
-
   return (
     <motion.div
       className={`${
@@ -27,6 +25,7 @@ const ExploreCard = ({
       } lg:height-full relative gap-3 lg:static`}
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       onClick={() => updateSelectedWorld(id)}
+      layout
     >
       <img
         src={imgUrl}

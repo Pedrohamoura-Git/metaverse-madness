@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { section, innerWidth, paddings } from '../../styles';
 import { staggerContainer, fadeIn, zoomIn } from '../../utils/motion';
 
-import { FeedbackCards } from '../../components';
+import { ExploreBtn, FeedbackCards } from '../../components';
 
 const Feedback = () => {
   const [feedbacks, setFeedbacks] = useState([
@@ -41,13 +41,10 @@ const Feedback = () => {
             className='mt-8 h-52 w-full rounded-3xl object-cover md:h-80 lg:mt-0 lg:h-[610px] lg:max-w-[800px]'
           />
 
-          <motion.img
-            variants={zoomIn(1, 0.75)}
-            initial='hidden'
-            whileInView='show'
-            src='/stamp.png'
-            alt='rocket among planets'
-            className='absolute top-5 -left-24 hidden h-40 w-40 rounded-3xl object-cover lg:inline'
+          <ExploreBtn
+            href='#explore'
+            imageClasses='absolute top-5 -left-24 hidden h-40 w-40 rounded-3xl object-cover lg:inline'
+            imageAnimation={zoomIn(1, 0.75)}
           />
         </motion.div>
       </motion.div>

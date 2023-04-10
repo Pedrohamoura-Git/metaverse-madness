@@ -12,7 +12,10 @@ import {
   slideIn,
   staggerContainer,
   textVariant,
+  endlessRotation,
 } from '../../utils/motion';
+
+import { ExploreBtn } from '../../components';
 
 const Hero = () => (
   <section className={`${yPaddings} sm:pl-16px pl-6`}>
@@ -51,15 +54,11 @@ const Hero = () => (
           className='relative z-10 h-[350px] w-full rounded-tl-[140px] object-cover sm:h-[450px]'
         />
 
-        <a href='#explore'>
-          <div className='relative z-10 -mt-[50px] flex w-full justify-end pr-[40px] sm:-mt-[70px]'>
-            <img
-              src='/stamp.png'
-              alt='stamp'
-              className='h-[100px] w-[100px] object-contain sm:h-[155px] sm:w-[155px]'
-            />
-          </div>
-        </a>
+        <ExploreBtn
+          href='#explore'
+          linkClasses='relative z-10 -mt-[50px] flex w-full justify-end pr-[40px] sm:-mt-[70px] '
+          imageAnimation={endlessRotation()}
+        />
       </motion.div>
     </motion.div>
   </section>

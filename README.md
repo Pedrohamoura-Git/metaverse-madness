@@ -58,7 +58,7 @@ Users should be able to:
 - <a href="https://nextjs.org/docs/messages/no-stylesheets-in-head-component" alt="" target="_blank"> No Stylesheets In Head Component </a>
 - <a href="https://jackyef.com/posts/transitioning-between-2-different-elements-with-flip#invert" alt="" target="_blank"> Flip animation technique </a>
 - <a href="https://www.reddit.com/r/learnreactjs/comments/v6tefq/learn_framer_motion_animate_css_grid_and_flexbox/" alt="" target="_blank"> Learn Framer Motion: Animate CSS Grid and Flexbox Layouts </a>
-
+- <a href="https://www.framer.com/motion/use-scroll/" alt="link to a animation library thar explains how to use scroll animations" target="_blank"> useScroll | Framer for Developers </a>
 
 ## Author
 

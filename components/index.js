@@ -8,6 +8,7 @@ import FeedbackCards from './FeedbackCards';
 import Footer from './Footer';
 import MetaverseBtn from './MetaverseBtn';
 import ExploreBtn from './ExploreBtn';
+import ScrollBar from './ScrollBar';
 
 export {
   Navbar,
@@ -21,4 +22,5 @@ export {
   Footer,
   MetaverseBtn,
   ExploreBtn,
+  ScrollBar,
 };

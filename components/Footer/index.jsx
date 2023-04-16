@@ -15,6 +15,7 @@ const Footer = () => (
       whileInView='show'
       viewport={{ once: false, amount: 0.25 }}
       className={`${innerWidth} ${paddings} `}
+      id='footer'
     >
       <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between'>
         <TitleText

@@ -15,6 +15,7 @@ const About = () => (
       sm:text-[16] md:leading-[40px] md:text-[24] lg:text-[32px] lg:leading-[57.6px]
       2xl:max-w-[1100px]
     `}
+    id='about'
   >
     <div className='gradient-02 z-0' />
 

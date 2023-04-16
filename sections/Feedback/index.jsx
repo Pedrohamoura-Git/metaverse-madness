@@ -19,7 +19,7 @@ const Feedback = () => {
   ]);
 
   return (
-    <section className={`${section} mt-14`}>
+    <section className={`${section} mt-14`} id="feedback">
       <motion.div
         variants={staggerContainer}
         initial='hidden'

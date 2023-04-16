@@ -18,7 +18,7 @@ import {
 import { ExploreBtn } from '../../components';
 
 const Hero = () => (
-  <section className={`${yPaddings} sm:pl-16px pl-6`}>
+  <section className={`${yPaddings} sm:pl-16px pl-6`} id='hero'>
     <motion.div
       variants={staggerContainer}
       initial='hidden'

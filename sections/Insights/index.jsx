@@ -8,7 +8,10 @@ import { TitleText, TypingText, InsightCard } from '../../components';
 import { insights } from '../../constants';
 
 const Insights = () => (
-  <section className={`${section} ${flexCenter} flex-col`}>
+  <section
+    className={`${section} ${flexCenter} flex-col`}
+    id='insights'
+  >
     <TypingText title='| Insight' />
 
     <TitleText title='Insight about metaverse' />

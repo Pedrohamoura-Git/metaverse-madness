@@ -16,6 +16,7 @@ const World = () => (
       whileInView='show'
       viewport={{ once: false, amount: 0.25 }}
       className={`${paddings} mx-auto flex w-full flex-col gap-8 lg:items-center 2xl:max-w-[1280px]`}
+      id='world'
     >
       <div>
         <TypingText title='| People in the World' />

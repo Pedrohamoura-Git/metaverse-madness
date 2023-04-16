@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { motion, useScroll } from 'framer-motion';
+import { slideIn } from '../../utils/motion';
 
 function ScrollBar() {
   const { scrollYProgress } = useScroll();
@@ -45,6 +46,12 @@ function ScrollBar() {
   ];
 
   return (
+    <motion.nav
+      variants={slideIn('right', 'tween', 0.2, 1)}
+      initial='hidden'
+      whileInView='show'
+      className='fixed top-[10vh] right-[2vw] z-20 hidden w-max items-center justify-between truncate text-white lg:flex'
+    >
       <motion.div className='relative '>
         <div className='flex items-center justify-center gap-4'>
           <ul className='flex h-[80vh] flex-col items-end justify-between py-1'>
@@ -61,13 +68,14 @@ function ScrollBar() {
           </ul>
 
           <div className='h-[80vh] w-5 truncate rounded-2xl border p-[5px] py-2'>
-          <motion.div
-            className='progress hero-gradient h-[78vh] origin-top rounded-3xl'
-            style={{ scaleY: scrollYProgress }}
-          />
+            <motion.div
+              className='progress hero-gradient h-[78vh] origin-top rounded-3xl'
+              style={{ scaleY: scrollYProgress }}
+            />
+          </div>
         </div>
-      </div>
-    </nav>
+      </motion.div>
+    </motion.nav>
   );
 }
 

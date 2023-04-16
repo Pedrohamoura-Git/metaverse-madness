@@ -20,7 +20,6 @@ const GetStarted = () => {
         className={`${paddings} flex flex-col items-center justify-around gap-8 lg:flex-row`}
         id='get-started'
       >
-        {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
         <motion.div variants={planetVariants('left')}>
           <img
             src='/get-started.png'

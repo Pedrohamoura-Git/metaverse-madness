@@ -45,21 +45,27 @@ function ScrollBar() {
   ];
 
   return (
-    <nav className='fixed top-[10vh] right-[4vw] z-20 h-[80vh] w-5 rounded-2xl border'>
-      <div className='relative'>
-        <div className='truncate p-[5px] py-2'>
+      <motion.div className='relative '>
+        <div className='flex items-center justify-center gap-4'>
+          <ul className='flex h-[80vh] flex-col items-end justify-between py-1'>
+            {sectionList.map(({ title, id }) => (
+              <li key={id} className='w-max'>
+                <a
+                  href={`#${id}`}
+                  className='rounded-xl border p-1 capitalize'
+                >
+                  {title}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <div className='h-[80vh] w-5 truncate rounded-2xl border p-[5px] py-2'>
           <motion.div
             className='progress hero-gradient h-[78vh] origin-top rounded-3xl'
             style={{ scaleY: scrollYProgress }}
           />
         </div>
-        <ul>
-          {sectionList.map(({ title, id }) => (
-            <li key={id}>
-              <a href={`#${id}`}>{title}</a>
-            </li>
-          ))}
-        </ul>
       </div>
     </nav>
   );

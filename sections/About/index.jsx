@@ -4,12 +4,17 @@ import { motion } from 'framer-motion';
 
 import { TypingText } from '../../components/CustomTexts';
 
-import { paddings, innerWidth, flexCenter } from '../../styles';
+import {
+  section,
+  paddings,
+  innerWidth,
+  flexCenter,
+} from '../../styles';
 import { fadeIn, staggerContainer } from '../../utils/motion';
 
 const About = () => (
   <section
-    className={`${paddings} align-center relative
+    className={`${section} ${paddings} align-center relative
       mx-auto flex w-full flex-col text-center font-sans uppercase
       leading-[24.4px] text-[14] text-[#C7C7C7] sm:leading-[30px]
       sm:text-[16] md:leading-[40px] md:text-[24] lg:text-[32px] lg:leading-[57.6px]

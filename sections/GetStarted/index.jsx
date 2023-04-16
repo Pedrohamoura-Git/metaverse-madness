@@ -4,14 +4,19 @@ import { motion } from 'framer-motion';
 
 import { startingFeatures } from '../../constants';
 
-import { section, paddings, planetsDimensions } from '../../styles';
+import {
+  section,
+  paddings,
+  planetsDimensions,
+  yPaddings,
+} from '../../styles';
 import { staggerContainer, planetVariants } from '../../utils/motion';
 
 import { TitleText, TypingText, StartSteps } from '../../components';
 
 const GetStarted = () => {
   return (
-    <section className={`${section}`}>
+    <section className={`${section} ${yPaddings}`}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'

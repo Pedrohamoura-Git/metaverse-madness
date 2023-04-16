@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import {
+  section,
   yPaddings,
   innerWidth,
   heroHeading,
@@ -18,7 +19,10 @@ import {
 import { ExploreBtn } from '../../components';
 
 const Hero = () => (
-  <section className={`${yPaddings} sm:pl-16px pl-6`} id='hero'>
+  <section
+    className={`${section} ${yPaddings} sm:pl-16px pl-6`}
+    id='hero'
+  >
     <motion.div
       variants={staggerContainer}
       initial='hidden'

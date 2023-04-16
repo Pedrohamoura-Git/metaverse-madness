@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { section, paddings, innerWidth } from '../../styles';
+import { section, yPaddings, innerWidth } from '../../styles';
 import { staggerContainer } from '../../utils/motion';
 import { exploreWorlds } from '../../constants';
 
@@ -16,7 +16,7 @@ const Explore = () => {
   return (
     <section
       className={`
-        ${section} ${paddings} 2xl:max-w-[1280px]
+        ${section} ${yPaddings}  2xl:max-w-[1280px]
         `}
       id='explore'
     >

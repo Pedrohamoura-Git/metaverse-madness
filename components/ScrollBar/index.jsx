@@ -7,25 +7,41 @@ function ScrollBar() {
 
   const sectionList = [
     {
-      title: 'Hero',
+      title: 'hero',
       id: 'hero',
     },
-    // {
-    //   title: 'Hero',
-    //   id: 'hero'
-    // },
-    // {
-    //   title: 'Hero',
-    //   id: 'hero'
-    // },
-    // {
-    //   title: 'Hero',
-    //   id: 'hero'
-    // },
+    {
+      title: 'about',
+      id: 'about',
+    },
+    {
+      title: 'explore',
+      id: 'explore',
+    },
+    {
+      title: 'get started',
+      id: 'get-started',
+    },
+    {
+      title: 'whats new',
+      id: 'whats-new',
+    },
+    {
+      title: 'world',
+      id: 'world',
+    },
+    {
+      title: 'insights',
+      id: 'insights',
+    },
     {
       title: 'Feedback',
       id: 'feedback',
     },
+    // {
+    //   title: 'footer',
+    //   id: 'footer',
+    // },
   ];
 
   return (

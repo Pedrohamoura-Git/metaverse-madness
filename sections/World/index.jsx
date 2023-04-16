@@ -21,7 +21,7 @@ const World = () => (
       <div>
         <TypingText title='| People in the World' />
         <TitleText
-          title='Track your friends and invite them to play together in the same world'
+          title='Track your friends and invite them to play together'
           textStyles='max-w-[950px]'
         />
       </div>

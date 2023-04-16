@@ -38,10 +38,10 @@ function ScrollBar() {
       title: 'Feedback',
       id: 'feedback',
     },
-    // {
-    //   title: 'footer',
-    //   id: 'footer',
-    // },
+    {
+      title: 'footer',
+      id: 'footer',
+    },
   ];
 
   return (

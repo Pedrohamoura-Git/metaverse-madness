@@ -50,7 +50,7 @@ function ScrollBar() {
       variants={slideIn('right', 'tween', 0.2, 1)}
       initial='hidden'
       whileInView='show'
-      className='fixed top-[10vh] right-[2vw] z-20 hidden w-max items-center justify-between truncate text-white lg:flex'
+      className='fixed top-[10vh] right-[1vw] z-20 hidden w-max items-center justify-between truncate text-white lg:flex'
     >
       <motion.div className='relative '>
         <div className='flex items-center justify-center gap-4'>

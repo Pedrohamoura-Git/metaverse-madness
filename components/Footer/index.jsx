@@ -29,43 +29,54 @@ const Footer = () => (
       <div className='mt-8 mb-12 border-b-2 opacity-20' />
 
       <div className='flex flex-col gap-4 md:flex-row md:items-center md:justify-between'>
-        <p className='text-2xl font-extrabold uppercase leading-5'>
+        <p
+          className='text-2xl font-extrabold uppercase leading-5'
+          data-testid='company-name'
+        >
           Metaversus
         </p>
-        <p className='text-sm opacity-50'>
+        <p className='text-sm opacity-50' data-testid='copyright'>
           Copyright © 2021 - 2022 Metaversus. All rights reserved.
         </p>
 
-        <div className='flex gap-4'>
-          <a href='#' target='_blank'>
-            <img
-              src='/twitter.svg'
-              alt='twitter-icon'
-              className='h-6 w-6'
-            />
-          </a>
-          <a href='#' target='_blank'>
-            <img
-              src='/linkedin.svg'
-              alt='linkedin-icon'
-              className='h-6 w-6'
-            />
-          </a>
-          <a href='#' target='_blank'>
-            <img
-              src='/instagram.svg'
-              alt='instagram-icon'
-              className='h-6 w-6'
-            />
-          </a>
-          <a href='#' target='_blank'>
-            <img
-              src='/facebook.svg'
-              alt='facebook-icon'
-              className='h-6 w-6'
-            />
-          </a>
-        </div>
+        <ul className='flex gap-4'>
+          <li>
+            <a href='#' target='_blank'>
+              <img
+                src='/twitter.svg'
+                alt='twitter-icon'
+                className='h-6 w-6'
+              />
+            </a>
+          </li>
+          <li>
+            <a href='#' target='_blank'>
+              <img
+                src='/linkedin.svg'
+                alt='linkedin-icon'
+                className='h-6 w-6'
+              />
+            </a>
+          </li>
+          <li>
+            <a href='#' target='_blank'>
+              <img
+                src='/instagram.svg'
+                alt='instagram-icon'
+                className='h-6 w-6'
+              />
+            </a>
+          </li>
+          <li>
+            <a href='#' target='_blank'>
+              <img
+                src='/facebook.svg'
+                alt='facebook-icon'
+                className='h-6 w-6'
+              />
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div className='footer-gradient absolute bottom-0 right-0' />

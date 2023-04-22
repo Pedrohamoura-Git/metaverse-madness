@@ -18,7 +18,10 @@ const MetaverseBtn = ({ color, styles }) => {
     >
       <img src='/headset.svg' alt='headset' className='h-6 w-6' />
 
-      <p className='text-left text-base text-white'>
+      <p
+        className='text-left text-base text-white'
+        data-testid='button-text'
+      >
         Enter metaverse
       </p>
     </button>

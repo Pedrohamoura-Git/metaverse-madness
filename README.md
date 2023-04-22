@@ -61,6 +61,7 @@ Users should be able to:
 - <a href="https://www.framer.com/motion/use-scroll/" alt="link to a animation library thar explains how to use scroll animations" target="_blank"> useScroll | Framer for Developers </a>
 - <a href="https://blog.logrocket.com/hide-scrollbar-without-impacting-scrolling-css/#hiding-scrollbar-chrome-safari-opera-webkit-based-browsers" alt="link to a blog explaining how to hide the browsers default scroll bars" target="_blank">Using CSS to hide scrollbars without impacting scrolling</a>
 - <a href="https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-react-app-with-react-i18next" alt="How to translate your React app with react-i18next" target="_blank">How to translate your React app with react-i18next</a>
+- <a href="https:https://stackoverflow.com/questions/60509527/jestreact-native-testing-library-how-to-test-an-image-src" alt="How to test an image src" target="_blank">Jest+React Native Testing Library: How to test an image src?</a>
 
 
 ## Author

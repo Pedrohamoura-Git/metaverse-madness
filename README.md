@@ -60,6 +60,8 @@ Users should be able to:
 - <a href="https://www.reddit.com/r/learnreactjs/comments/v6tefq/learn_framer_motion_animate_css_grid_and_flexbox/" alt="" target="_blank"> Learn Framer Motion: Animate CSS Grid and Flexbox Layouts </a>
 - <a href="https://www.framer.com/motion/use-scroll/" alt="link to a animation library thar explains how to use scroll animations" target="_blank"> useScroll | Framer for Developers </a>
 - <a href="https://blog.logrocket.com/hide-scrollbar-without-impacting-scrolling-css/#hiding-scrollbar-chrome-safari-opera-webkit-based-browsers" alt="link to a blog explaining how to hide the browsers default scroll bars" target="_blank">Using CSS to hide scrollbars without impacting scrolling</a>
+- <a href="https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-react-app-with-react-i18next" alt="How to translate your React app with react-i18next" target="_blank">How to translate your React app with react-i18next</a>
+
 
 ## Author
 

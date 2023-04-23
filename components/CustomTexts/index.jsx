@@ -9,6 +9,7 @@ export const TypingText = ({ title, textStyles }) => (
     variants={textContainer}
     className={`mb-2 text-[14px] font-normal text-secondary-white
     ${textStyles}`}
+    data-testid='typing-paragraph'
   >
     {Array.from(title).map((letter, index) => (
       <motion.span

@@ -1,14 +1,13 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
     "react-app",
     "prettier"
   ],
   "rules": {
     "react/jsx-filename-extension": [
       "error",
-      { "extensions": [".js", ".jsx", ".tsx"] }
+      { "extensions": [".js", ".jsx"] }
     ],
     "import/extensions": [
       "error",
@@ -16,15 +15,13 @@
       {
         "js": "never",
         "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
       }
     ]
   },
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [".js", ".jsx"]
       }
     }
   }

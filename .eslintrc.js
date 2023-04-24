@@ -14,6 +14,10 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react"],
-  rules: {},
+  plugins: ['react'],
+
+  // REMOVE ON TYPESCRIPT IMPLEMENTATION
+  rules: {
+    'react/prop-types': 0,
+  },
 };

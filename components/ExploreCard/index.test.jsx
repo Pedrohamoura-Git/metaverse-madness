@@ -30,4 +30,17 @@ describe('ExploreCard', () => {
     expect(image).toHaveAttribute('src', '/world-1.png');
   });
 
+  it('should call updateSelectedWorld(id) when "cards-wrapper" is clicked', () => {
+    expect(wrapper).toBeTruthy();
+
+    const updateSelectedWorldMock = jest.fn();
+
+    const cardsWrapper = wrapper.getByTestId('cards-wrapper');
+    expect(cardsWrapper).toBeTruthy();
+    console.log('cardsWrapper: ', cardsWrapper);
+
+    fireEvent.click(cardsWrapper);
+
+    expect(updateSelectedWorldMock).toBeCalled();
+  });
 });

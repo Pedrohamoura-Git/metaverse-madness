@@ -35,6 +35,7 @@ const ExploreCard = ({
             ? 'h-[370px] lg:w-full'
             : 'h-[70px] md:h-28 lg:w-full lg:rounded-b-none'
         }  w-full rounded-2xl object-cover duration-500`}
+        data-testid='card-image'
       />
       <div
         className={`${

@@ -20,10 +20,23 @@ const NewFeatures = ({ featuresList }) => (
           key={id}
         >
           <div className='glassmorphism mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-3xl'>
-            <img src={imgUrl} alt={subtitle} className='w-h-6 h-6' />
+            <img
+              src={imgUrl}
+              alt={subtitle}
+              className='w-h-6 h-6'
+              data-testid='feature-image'
+            />
           </div>
-          <h5 className='mb-4 text-2xl font-bold'>{title}</h5>
-          <p className='text-center text-lg text-[#B0B0B0] lg:text-left'>
+          <h5
+            className='mb-4 text-2xl font-bold'
+            data-testid='feature-title'
+          >
+            {title}
+          </h5>
+          <p
+            className='text-center text-lg text-[#B0B0B0] lg:text-left'
+            data-testid='feature-subtitle'
+          >
             {subtitle}
           </p>
         </motion.li>

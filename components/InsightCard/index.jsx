@@ -23,10 +23,18 @@ const InsightCard = ({ insights }) => (
             src={imgUrl}
             alt={title}
             className={`h-[250px] rounded-3xl object-cover md:h-[250px] md:w-[270px]`}
+            data-testid='insight-image'
           />
           <div className='lg:w-[32rem]'>
-            <h5 className='mb-4 text-[26px] lg:text-4xl'>{title}</h5>
-            <p className='text-sm'>{subtitle}</p>
+            <h5
+              className='mb-4 text-[26px] lg:text-4xl'
+              data-testid='insight-title'
+            >
+              {title}
+            </h5>
+            <p className='text-sm' data-testid='insight-subtitle'>
+              {subtitle}
+            </p>
           </div>
           <a href='' className='hidden lg:block' target='_blank'>
             <img

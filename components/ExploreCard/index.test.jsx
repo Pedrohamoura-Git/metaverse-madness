@@ -7,17 +7,20 @@ import ExploreCard from './index';
 
 describe('ExploreCard', () => {
   let wrapper;
-  const wrapperBuilder = () =>
-    render(
+  const updateSelectedWorldMock = jest.fn();
+
+  const wrapperBuilder = () => {
+    return render(
       <ExploreCard
         id='world-1'
         imgUrl='/world-1.png'
         title='world-1'
         index={0}
         selectedWorld='world-2'
-        updateSelectedWorld={() => ({})}
+        updateSelectedWorld={updateSelectedWorldMock}
       />,
     );
+  };
 
   beforeEach(() => {
     wrapper = wrapperBuilder();
@@ -40,11 +43,7 @@ describe('ExploreCard', () => {
   it('should call updateSelectedWorld(id) when "cards-wrapper" is clicked', () => {
     expect(wrapper).toBeTruthy();
 
-    const updateSelectedWorldMock = jest.fn();
-
-    const cardsWrapper = wrapper.getByTestId('cards-wrapper');
-    expect(cardsWrapper).toBeTruthy();
-    console.log('cardsWrapper: ', cardsWrapper);
+    const cardsWrapper = wrapper.getByTestId('cards-wrapper-0');
 
     fireEvent.click(cardsWrapper);
 

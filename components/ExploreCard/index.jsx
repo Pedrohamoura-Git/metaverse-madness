@@ -26,7 +26,7 @@ const ExploreCard = ({
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       onClick={() => updateSelectedWorld(id)}
       layout
-      data-testid='cards-wrapper'
+      data-testid={`cards-wrapper-${index}`}
     >
       <img
         src={imgUrl}

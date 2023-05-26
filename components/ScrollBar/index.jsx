@@ -60,6 +60,7 @@ function ScrollBar() {
                 <a
                   href={`#${id}`}
                   className='rounded-xl border p-1 capitalize'
+                  data-testid={`section-link-${id}`}
                 >
                   {title}
                 </a>

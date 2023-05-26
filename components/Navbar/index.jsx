@@ -21,6 +21,7 @@ const Navbar = () => (
         src='/search.svg'
         alt='search'
         className='h-[24px] w-[24px] object-contain'
+        data-testid='navbar-search-icon'
       />
       <h2 className='text-[24px] font-extrabold leading-[30px] text-white'>
         METAVERSUS
@@ -29,6 +30,7 @@ const Navbar = () => (
         src='/menu.svg'
         alt='menu'
         className='h-[24px] w-[24px] object-contain'
+        data-testid='navbar-menu-icon'
       />
     </div>
   </motion.nav>

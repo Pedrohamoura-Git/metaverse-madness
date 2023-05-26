@@ -14,7 +14,7 @@ describe('ExploreCard', () => {
       <ExploreCard
         id='world-1'
         imgUrl='/world-1.png'
-        title='world-1'
+        title='title-1'
         index={0}
         selectedWorld='world-2'
         updateSelectedWorld={updateSelectedWorldMock}
@@ -48,5 +48,11 @@ describe('ExploreCard', () => {
     fireEvent.click(cardsWrapper);
 
     expect(updateSelectedWorldMock).toBeCalled();
+  });
+
+  it('should render the MetaverseBtn if wasThisCardSelected is truthy', () => {
+    const paragraph = wrapper.getByTestId('card-title');
+
+    expect(paragraph).toHaveTextContent('title-1');
   });
 });

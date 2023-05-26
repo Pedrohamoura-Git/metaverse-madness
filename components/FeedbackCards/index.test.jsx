@@ -23,19 +23,19 @@ describe('FeedbackCards', () => {
     wrapper = wrapperBuilder();
   });
 
-  it('should render the MetaverseBtn if wasThisCardSelected is truthy', () => {
+  it('should render the correct feedback name', () => {
     expect(wrapper.getByTestId('feedback-name')).toHaveTextContent(
       feedbacks[0].name,
     );
   });
 
-  it('should render the MetaverseBtn if wasThisCardSelected is truthy', () => {
+  it('should render the correct feedback occupation', () => {
     expect(
       wrapper.getByTestId('feedback-occupation'),
     ).toHaveTextContent(feedbacks[0].occupation);
   });
 
-  it('should render the MetaverseBtn if wasThisCardSelected is truthy', () => {
+  it('should render the correct feedback text', () => {
     expect(
       wrapper.getByTestId('feedback-feedback'),
     ).toHaveTextContent(feedbacks[0].feedback);

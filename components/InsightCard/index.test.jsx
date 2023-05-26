@@ -32,13 +32,13 @@ describe('InsightCard', () => {
     expect(img).toHaveAttribute('alt', insights.title);
   });
 
-  it('should render the ', () => {
+  it('should render the props title', () => {
     expect(wrapper.getByTestId('insight-title')).toHaveTextContent(
       insights[0].title,
     );
   });
 
-  it('should render the ', () => {
+  it('should render the props subtitle', () => {
     expect(wrapper.getByTestId('insight-subtitle')).toHaveTextContent(
       insights[0].subtitle,
     );

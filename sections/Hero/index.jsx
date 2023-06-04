@@ -22,6 +22,7 @@ const Hero = () => (
   <section
     className={`${section} ${yPaddings} sm:pl-16px pl-6`}
     id='hero'
+    data-testid='page-section'
   >
     <motion.div
       variants={staggerContainer}
@@ -56,6 +57,7 @@ const Hero = () => (
           src='/cover.png'
           alt='cover'
           className='relative z-10 h-[350px] w-full rounded-tl-[140px] object-cover sm:h-[450px]'
+          data-testid='hero-image'
         />
 
         <ExploreBtn

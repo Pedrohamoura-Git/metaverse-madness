@@ -21,10 +21,14 @@ const StartSteps = ({ stepsList }) => (
       >
         <span
           className={`${flexCenter} glassmorphism bold min-h-[60px] min-w-[60px] rounded-3xl text-xl`}
+          data-testid={`step-number-${index}`}
         >
           {index <= 8 ? `0${index + 1}` : index + 1}
         </span>
-        <span className='max-w-sm text-lg text-[#B0B0B0]'>
+        <span
+          className='max-w-sm text-lg text-[#B0B0B0]'
+          data-testid={`step-description-${index}`}
+        >
           {description}
         </span>
       </motion.li>

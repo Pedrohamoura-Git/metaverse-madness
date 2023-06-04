@@ -3,9 +3,9 @@ import { render } from '@testing-library/react';
 
 import '@testing-library/jest-dom';
 
-import NewFeatures from './index';
+import ScrollBar from './index';
 
-describe('NewFeatures', () => {
+describe('ScrollBar', () => {
   let wrapper;
 
   const sectionList = [
@@ -16,7 +16,7 @@ describe('NewFeatures', () => {
   ];
 
   const wrapperBuilder = () => {
-    return render(<NewFeatures sectionList={sectionList} />);
+    return render(<ScrollBar sectionList={sectionList} />);
   };
 
   beforeEach(() => {

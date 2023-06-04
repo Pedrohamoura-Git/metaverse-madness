@@ -16,7 +16,8 @@ describe('About', () => {
     wrapper = wrapperBuilder();
   });
 
-  it('the explore ', () => {
+
+  it('the explore link should have the correct href attribute', () => {
     expect(wrapper.getByTestId('explore-link')).toHaveAttribute(
       'href',
       '#explore',

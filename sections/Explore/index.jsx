@@ -19,6 +19,7 @@ const Explore = () => {
         ${section} ${yPaddings}  2xl:max-w-[1280px]
         `}
       id='explore'
+      data-testid='page-section'
     >
       <motion.div
         variants={staggerContainer}

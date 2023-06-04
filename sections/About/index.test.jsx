@@ -16,6 +16,12 @@ describe('About', () => {
     wrapper = wrapperBuilder();
   });
 
+  it('the About section should have the correct id', () => {
+    expect(wrapper.getByTestId('page-section')).toHaveAttribute(
+      'id',
+      'about',
+    );
+  });
 
   it('the explore link should have the correct href attribute', () => {
     expect(wrapper.getByTestId('explore-link')).toHaveAttribute(

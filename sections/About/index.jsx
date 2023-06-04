@@ -57,11 +57,13 @@ const About = () => (
       <motion.a
         variants={fadeIn('up', 'tween', 0.4, 1)}
         href='#explore'
+        data-testid='explore-link'
       >
         <img
           src='/arrow-down.svg'
           alt='arrow down'
           className='mx-auto mt-8 h-[32px] w-[32px]'
+          data-testid='explore-link-image'
         />
       </motion.a>
     </motion.div>

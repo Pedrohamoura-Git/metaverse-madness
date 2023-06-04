@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { section, paddings, worldPeople } from '../../styles';
@@ -17,6 +17,7 @@ const World = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${paddings} mx-auto flex w-full flex-col gap-8 lg:items-center 2xl:max-w-[1280px]`}
       id='world'
+      data-testid='page-section'
     >
       <div>
         <TypingText title='| People in the World' />
@@ -37,6 +38,7 @@ const World = () => (
           src='/map.png'
           alt='world map'
           className='h-full w-full object-cover'
+          data-testid='world-image'
         />
         <motion.ul
           variants={staggerContainer}
@@ -54,6 +56,7 @@ const World = () => (
               src='/white-man.png'
               alt='white man'
               className={`${worldPeople}`}
+              data-testid='white-man-image'
             />
           </motion.li>
           <motion.li
@@ -66,6 +69,7 @@ const World = () => (
               src='/white-woman.png'
               alt='white woman'
               className={`${worldPeople}`}
+              data-testid='white-woman-image'
             />
           </motion.li>
           <motion.li
@@ -78,6 +82,7 @@ const World = () => (
               src='/black-man.png'
               alt='black man'
               className={`${worldPeople}`}
+              data-testid='black-man-image'
             />
           </motion.li>
 
@@ -90,6 +95,7 @@ const World = () => (
             <img
               src='/world-billboard-1.png'
               alt='upside down billboard'
+              data-testid='world-billboard-1-image'
             />
           </motion.li>
           <motion.li
@@ -101,6 +107,7 @@ const World = () => (
             <img
               src='/world-billboard-2.png'
               alt='Hawkins Labs billboard'
+              data-testid='world-billboard-2-image'
             />
           </motion.li>
         </motion.ul>

@@ -11,6 +11,7 @@ const Insights = () => (
   <section
     className={`${section} ${flexCenter} flex-col`}
     id='insights'
+    data-testid='page-section'
   >
     <TypingText title='| Insight' />
 

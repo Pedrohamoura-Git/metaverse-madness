@@ -24,12 +24,14 @@ const GetStarted = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${paddings} flex flex-col items-center justify-around gap-8 lg:flex-row`}
         id='get-started'
+        data-testid='page-section'
       >
         <motion.div variants={planetVariants('left')}>
           <img
             src='/get-started.png'
             className={`${planetsDimensions}`}
             alt=''
+            data-testid='get-started-image'
           />
         </motion.div>
 

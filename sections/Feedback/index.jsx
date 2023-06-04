@@ -19,13 +19,15 @@ const Feedback = () => {
   ]);
 
   return (
-    <section className={`${section} mt-14`} id="feedback">
+    <section className={`${section} mt-14`} id='feedback'>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
         className={`${innerWidth} ${paddings} lg:flex lg:items-center lg:gap-6`}
+        id='feedback'
+        data-testid='page-section'
       >
         <FeedbackCards feedbacks={feedbacks} />
 
@@ -39,6 +41,7 @@ const Feedback = () => {
             src='/planet-09.png'
             alt='rocket among planets'
             className='mt-8 h-52 w-full rounded-3xl object-cover md:h-80 lg:mt-0 lg:h-[610px] lg:max-w-[800px]'
+            data-testid='feedback-image'
           />
 
           <ExploreBtn

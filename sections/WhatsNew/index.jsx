@@ -19,9 +19,8 @@ const GetStarted = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${paddings} mx-auto flex w-full flex-col gap-8 lg:flex-row lg:items-center 2xl:max-w-[1280px]`}
         id='whats-new'
+        data-testid='page-section'
       >
-        {/* Todo: animar a rotação do planeta e de alguns sateletes também */}
-
         <div className='flex flex-[0.95] flex-col justify-center'>
           <TypingText title='| Whats New?' />
 
@@ -35,6 +34,7 @@ const GetStarted = () => {
             src='/whats-new.png'
             className={`${planetsDimensions}`}
             alt=''
+            data-testid='hero-image'
           />
         </motion.div>
       </motion.div>

@@ -21,6 +21,7 @@ const About = () => (
       2xl:max-w-[1100px]
     `}
     id='about'
+    data-testid='page-section'
   >
     <div className='gradient-02 z-0' />
 

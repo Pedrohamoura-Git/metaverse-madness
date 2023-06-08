@@ -8,7 +8,7 @@ import { fadeIn } from '../../utils/motion';
 import { TitleText, MetaverseBtn } from '../index';
 
 const Footer = () => (
-  <footer className={`relative ${section}`}>
+  <footer className={`relative ${section} lg:flex lg:items-end`}>
     <motion.div
       variants={fadeIn('up', 'tween', 0.2, 0.75)}
       initial='hidden'

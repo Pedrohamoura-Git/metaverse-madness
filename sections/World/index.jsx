@@ -22,7 +22,7 @@ const World = () => (
       <div>
         <TypingText
           title='| People in the World'
-          textStyles='uppercase lg:text-center'
+          textStyles='uppercase text-center'
         />
         <TitleText
           title='Track your friends and invite them to play together'

@@ -38,7 +38,7 @@ const GetStarted = () => {
         <div className='class="flex justify-center" flex-[0.95] flex-col'>
           <TypingText
             title='| How Metaversus Works'
-            textStyles='uppercase lg:text-center'
+            textStyles='uppercase text-center'
           />
 
           <TitleText title='Get started with just a few clicks' />

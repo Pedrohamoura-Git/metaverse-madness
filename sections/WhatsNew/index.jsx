@@ -24,7 +24,7 @@ const GetStarted = () => {
         <div className='flex flex-[0.95] flex-col justify-center'>
           <TypingText
             title='| Whats New?'
-            textStyles='uppercase lg:text-center'
+            textStyles='uppercase text-center'
           />
 
           <TitleText title="What's new about Metaversus?" />

@@ -15,7 +15,7 @@ const Insights = () => (
   >
     <TypingText
       title='| Insight'
-      textStyles='uppercase lg:text-center'
+      textStyles='uppercase text-center'
     />
 
     <TitleText title='Insight about metaverse' />

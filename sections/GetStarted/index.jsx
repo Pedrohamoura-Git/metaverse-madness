@@ -22,7 +22,7 @@ const GetStarted = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${paddings} flex flex-col items-center justify-around gap-8 lg:flex-row z-10`}
+        className={`${paddings} z-10 flex flex-col items-center justify-around gap-8 lg:flex-row`}
         id='get-started'
         data-testid='page-section'
       >
@@ -35,7 +35,7 @@ const GetStarted = () => {
           />
         </motion.div>
 
-        <div className='class="flex justify-center" flex-[0.95] flex-col'>
+        <div className='class="flex justify-center" z-10 flex-[0.95] flex-col'>
           <TypingText
             title='| How Metaversus Works'
             textStyles='uppercase text-center'

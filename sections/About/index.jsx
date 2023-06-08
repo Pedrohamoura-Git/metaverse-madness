@@ -23,7 +23,7 @@ const About = () => (
     id='about'
     data-testid='page-section'
   >
-    <div className='gradient-02 z-0' />
+    <div className='z-0 gradient-02' />
 
     <motion.div
       variants={staggerContainer}
@@ -48,7 +48,7 @@ const About = () => (
         <span className='font-bold text-white'>
           madness of the metaverse.
         </span>{' '}
-        Using only <span className='font-bold text-white'>VR</span>
+        Using only <span className='mr-2 font-bold text-white'>VR</span>
         devices you can easily explore the metaverse the way you want
         and turn your dreams into reality. Let's{' '}
         <span className='font-bold text-white'>explore</span> the

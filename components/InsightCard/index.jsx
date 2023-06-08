@@ -22,7 +22,7 @@ const InsightCard = ({ insights }) => (
           <img
             src={imgUrl}
             alt={title}
-            className={`h-[250px] rounded-3xl object-cover md:h-[250px] md:w-[270px]`}
+            className={`h-[250px] rounded-3xl object-cover md:h-[185px] md:w-[270px]`}
             data-testid='insight-image'
           />
           <div className='lg:w-[32rem]'>

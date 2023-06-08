@@ -22,7 +22,7 @@ const GetStarted = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${paddings} flex flex-col items-center justify-around gap-8 lg:flex-row`}
+        className={`${paddings} flex flex-col items-center justify-around gap-8 lg:flex-row z-10`}
         id='get-started'
         data-testid='page-section'
       >

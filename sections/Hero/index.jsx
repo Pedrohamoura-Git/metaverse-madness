@@ -56,7 +56,7 @@ const Hero = () => (
         <img
           src='/cover.png'
           alt='cover'
-          className='relative z-10 h-[350px] w-full rounded-tl-[140px] object-cover sm:h-[450px]'
+          className='relative z-10 h-[350px] w-full rounded-tl-[140px] object-cover sm:h-[400px]'
           data-testid='hero-image'
         />
 

@@ -33,7 +33,7 @@ const FeedbackCards = ({ feedbacks }) => {
             </h6>
 
             <p
-              className='mt-6 text-lg leading-9 md:text-2xl md:leading-10'
+              className='z-10 mt-6 text-lg leading-9 md:text-2xl md:leading-10'
               data-testid='feedback-feedback'
             >
               {feedback}

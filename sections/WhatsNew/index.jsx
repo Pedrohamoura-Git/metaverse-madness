@@ -22,7 +22,10 @@ const GetStarted = () => {
         data-testid='page-section'
       >
         <div className='flex flex-[0.95] flex-col justify-center'>
-          <TypingText title='| Whats New?' />
+          <TypingText
+            title='| Whats New?'
+            textStyles='uppercase lg:text-center'
+          />
 
           <TitleText title="What's new about Metaversus?" />
 

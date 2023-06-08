@@ -20,7 +20,10 @@ const World = () => (
       data-testid='page-section'
     >
       <div>
-        <TypingText title='| People in the World' />
+        <TypingText
+          title='| People in the World'
+          textStyles='uppercase lg:text-center'
+        />
         <TitleText
           title='Track your friends and invite them to play together'
           textStyles='max-w-[950px]'

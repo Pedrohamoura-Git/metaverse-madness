@@ -13,7 +13,10 @@ const Insights = () => (
     id='insights'
     data-testid='page-section'
   >
-    <TypingText title='| Insight' />
+    <TypingText
+      title='| Insight'
+      textStyles='uppercase lg:text-center'
+    />
 
     <TitleText title='Insight about metaverse' />
 

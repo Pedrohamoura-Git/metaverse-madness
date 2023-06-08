@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { startingFeatures } from '../../constants';
@@ -38,7 +38,7 @@ const GetStarted = () => {
         <div className='class="flex justify-center" flex-[0.95] flex-col'>
           <TypingText
             title='| How Metaversus Works'
-            textStyles='uppercase lg:text-right'
+            textStyles='uppercase lg:text-center'
           />
 
           <TitleText title='Get started with just a few clicks' />

@@ -16,7 +16,7 @@ export const flexEnd = 'flex justify-end';
 export const navPadding = 'pt-[98px]';
 
 // sections
-export const section = `${innerWidth} ${flexCenter} mx-auto text-white z-10 max-w-[90%] lg:h-[100vh]`;
+export const section = `${innerWidth} mx-auto text-white z-10 max-w-[90%] lg:h-[100vh] lg:flex lg:justify-center`;
 
 // hero section
 export const heroHeading =

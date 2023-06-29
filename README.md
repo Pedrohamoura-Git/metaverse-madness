@@ -1,6 +1,6 @@
 # Metaverse Madness
 
-- Live Site URL: - <a href="#" target="_blank" alt="">...</a>
+- Live Site URL: - <a href="https://metaverse-madness-site.vercel.app/" target="_blank" alt="">Live Site</a>
 ## Table of contents
 
 - [Overview](#overview)
